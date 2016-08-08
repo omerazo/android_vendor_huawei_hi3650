@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <tag>
+        <apk>
+        <!--BEGIN PN: DTS2016012003766  , Added by cwx315496, 2016/01/22 -->
+        /system/app/HWCardManager.apk;
+        <!--END PN: DTS2016012003766  , Added by cwx315496, 2016/01/22-->
+       </apk>
+    </tag>

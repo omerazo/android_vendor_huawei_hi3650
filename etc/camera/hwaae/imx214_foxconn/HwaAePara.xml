@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="gb2312"?>
+<AEConfig>
+    <sensor_type>5</sensor_type>
+    <aperture>200</aperture>
+    <iso_calibration>32</iso_calibration>
+    <expo_type>0</expo_type>
+    <default_expo>8176</default_expo>
+    <default_gain>16</default_gain>
+    <stable2unstable_range>5</stable2unstable_range>
+    <unstable2stable_range>3</unstable2stable_range>
+    <step>8</step>
+    <trigger_gain>128</trigger_gain>
+    <min_iso>50</min_iso>
+    <max_iso>1600</max_iso>
+    <min_expo>3</min_expo>
+    <min_fps>15</min_fps>
+    <target_lum>50</target_lum>
+    <expo_gap>4</expo_gap>
+    <max_hdr_expo_time>125000</max_hdr_expo_time>
+    <white_point>128</white_point>
+    <white_ratio>8</white_ratio>
+    <black_point>14</black_point>
+    <black_ratio>16</black_ratio>
+ </AEConfig>

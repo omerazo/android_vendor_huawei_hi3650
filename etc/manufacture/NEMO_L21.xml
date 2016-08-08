@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MMITest>
+    <TestItem key="ro.mmi.fingerprint_test" value="false"></TestItem>
+    <TestItem key="ro.mmi.nfc_test" value="true"></TestItem>
+    <Factory>
+    </Factory>
+
+    <!--Factory Extend Test black list.The items in the tag will not be tested in Factory Extend Test
+        Notes:the TestItem value should be set "false"-->
+    <Factory2>
+        <TestItem key="ro.mmi.smartpa_calibratet_test" value="false"></TestItem>
+    </Factory2>
+
+    <Normal>
+    </Normal>
+
+</MMITest>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<accel-packages> 
+    <pkg name="com.youku.phone"/>
+    <pkg name="com.tencent.mm"/>
+    <pkg name="com.funshion.video.mobile"/>
+    <pkg name="com.kingsoft"/>
+    <pkg name="com.jm.android.jumei"/>
+    <pkg name="fm.xiami.main"/>
+    <pkg name="com.suning.mobile.ebuy"/>
+    <pkg name="com.ting.mp3.android"/>
+    <pkg name="com.erdo.android.FJDXCartoon"/>
+    <pkg name="com.duowan.mobile"/>
+    <pkg name="cn.wps.moffice_eng"/>
+    <pkg name="com.UCMobile"/>
+    <pkg name="com.qq.reader"/>
+    <pkg name="com.tencent.qqpim"/>
+    <pkg name="com.pplive.androidphone"/>
+    <pkg name="com.chaozh.iReaderFree"/>
+    <pkg name="com.eg.android.AlipayGphone"/>
+    <pkg name="com.qzone"/>
+    <pkg name="com.tudou.android"/>
+    <pkg name="com.tongcheng.android"/>
+    <pkg name="com.sds.android.ttpod"/>
+    <pkg name="com.tmall.wireless"/>
+    <pkg name="com.tencent.news"/>
+    <pkg name="sogou.mobile.explorer"/>
+    <pkg name="com.shuqi.controller"/>
+    <pkg name="com.shjt.map"/>
+    <pkg name="com.letv.android.client"/>
+    <pkg name="com.wangzhi.MaMaHelp"/>
+    <pkg name="com.ishugui"/>
+    <pkg name="com.funcity.taxi.passenger"/>
+    <pkg name="com.jingdong.app.mall"/>
+    <pkg name="cn.com.fetion"/>
+    <pkg name="com.dangdang.reader"/>
+    <pkg name="com.baidu.mbaby"/>
+    <pkg name="com.meilishuo"/>
+    <pkg name="com.achievo.vipshop"/>
+    <pkg name="com.tencent.qqmusic"/>
+</accel-packages>

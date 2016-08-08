@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2013 Huawei Inc.
+ * only modify the vaule of the "current".
+ * the value means the power current in mA.
+ -->
+
+<scene_current_config version="1">
+    <item name="ebook" id="10003" current="332"/>
+    <item name="game3d" id="10002" current="600"/>
+    <item name="game2d" id="10011" current="295"/>
+    <item name="camera" id="10007" current="647"/>
+    <item name="browser" id="10001" current="389"/>
+    <item name="launcher" id="10010" current="180"/>
+    <item name="screen_off" id="3004" current="14"/>
+    <item name="video_play" id="10009" current="301"/>
+    <array name="max.elecquantity.node"> <!-- such as max battery elecquantity for mate is 4000mAh -->
+        <arrayItem>/sys/class/power_supply/Battery/capacity_fcc</arrayItem>
+        <arrayItem>/sys/class/power_supply/bms/charge_full_design</arrayItem>
+    </array>
+</scene_current_config>
+

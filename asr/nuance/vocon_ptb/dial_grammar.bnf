@@ -1,0 +1,104 @@
+#BNF+EMV2.1;
+!grammar dial_grammar;
+!start <Wakeup>;
+!start <Dial>;
+!start <Dial_Special_Num>;
+!start <Contact>;
+!start <Dial_Confirm>;
+!start <Answer_Confirm>;
+!start <Hang_Up>;
+!start <Select_Num>;
+!start <Open_Google_Now>;
+!start <Find_Phone>;
+!slot <wakeup_word>;
+!slot <contacts>;
+
+<Wakeup>:<wakeup_word>;
+<Dial>:[<Wakeup>]<W_Dial>;
+<Dial_Special_Num>:[<Wakeup>]<W_Dial_Special_Num>;
+<Contact>:[<Wakeup>]<W_Contact>;
+<Dial_Confirm>:[<Wakeup>]<W_Dial_Confirm>;
+<Answer_Confirm>:[<Wakeup>]<W_Answer_Confirm>;
+<Hang_Up>:[<Wakeup>]<W_Hang_Up>;
+<Select_Num>:[<Wakeup>]<W_Select_Num>;
+<Open_Google_Now>:[<Wakeup>]<W_Open_Google_Now>;
+<Find_Phone>:[<Wakeup>]<W_Find_Phone>;
+
+<W_Dial>:<W_Dial_1>|<W_Dial_2>;
+<W_Dial_1>:(<Dial_Action_1> para <contacts> |
+            <Dial_Action_1> <at_Number_Type> de <contacts>
+            <Dial_Action_1> para [o] (número | número de telefone | telefone) <of_Number_Type> de <contacts> |
+            <Dial_Action_1>  para <contacts> <at2_Number_Type> |
+            <Dial_Action_1> para [o | seu] (número | número de telefone | telefone) <of_Number_Type> );
+<W_Dial_2>:<Dial_Action_2>;
+<W_Dial_Special_Num>:<Dial_Action_1> <Special_Num>;
+<W_Contact>:<contacts>;
+<W_Dial_Confirm>:<Ok> | <Cancel>;
+<W_Answer_Confirm>:<Answer> | <Reject>;
+<W_Hang_Up>: <Reject>;
+<W_Select_Num>:<Select_1> | <Select_2> | <Select_3> | <Select_4> | <Select_5> | <Select_6>;
+<W_Open_Google_Now>: (abrir | abre | abra | iniciar | inicie | inicia) google now;
+<W_Find_Phone>: onde (você (está | tá) | tu (estás | está | tá))  ;
+
+<Dial_Action_1> : (fazer | faça | faz) [uma] (ligação | chamada) | telefonar| telefone | telefona | contactar| chamar| chama | chame | discar| disque | disca | ligar | liga | ligue;
+<Dial_Action_2> : (rediscar | redisque | redisca) [para] [o] [último número] |
+                  (telefonar | telefone | telefona | chamar | chame | chama | discar | disque | disca | ligar | ligue | liga | (fazer | faz | faça) a (chamada | ligação)) (de volta| de novo) [para] [o] [último número];
+<Number_Type> : !tag(Number_Type_TAG,   
+                  casa  !id(1) |
+                  escritório !id(2) | 
+                  trabalho  !id(2) |
+                  celular   !id(3)
+                  );
+<of_Number_Type> : !tag(Number_Type_TAG,
+                    (de | da) casa   !id(1) |
+                    do trabalho   !id(2) |
+                    do escritório   !id(2) |
+                    do celular !id(3)
+                    );
+<at_Number_Type> : !tag(Number_Type_TAG,
+                    na casa  !id(1) |
+                    no trabalho  !id(2) |
+                    no escritório  !id(2) |
+                    no celular  !id(3)
+                    );
+<at2_Number_Type> : !tag(Number_Type_TAG,
+                    na casa dele  !id(1) |
+                    na casa dela  !id(1) |
+                    no (trabalho | escritório) dele  !id(2) |
+                    no (trabalho | escritório) dela  !id(2) |
+                    no celular dele  !id(3) |
+                    no celular dela  !id(3)
+                    );                        
+<Special_Num> : !tag(Special_Num,
+					9 1 1 | 1 1 2| 1 1 0| 1 1 8| 1 1 9 | 0 6 6 | 1 9 0 | 1 9 2 | 1 9 3
+					);
+<Ok> : !tag(Ok,
+			ok | sim | [sim] [pode] (ligar | telefonar | fazer a (ligação | chamada)) | [sim] (liga | ligue | (faz | faça) a (ligação | chamada))
+			);
+<Cancel> : !tag(Cancel,
+				(cancelar | cancela | cancele) [a] [chamada | ligação]  | (deixar | deixa | deixe) de (ligar | fazer a ligação)
+				);
+<Answer> : !tag(Answer,
+			(atender | atende | atenda | responder | responde | responda) [a] [chamada | ligação]
+			);
+<Reject> : !tag(Reject,
+				(rejeitar | rejeita | rejeite | [não]  (atende | atenda | atender | aceitar | aceite | aceita) [a] [chamada | ligação])
+				);
+<Select_1> : !tag(Select_1,
+				 ([o] primeiro | [a] primeira) | [o | a] número um
+				);
+<Select_2> : !tag(Select_2,
+				 ([o] segundo | [a] segunda) | [o | a] número dois
+				);
+<Select_3> : !tag(Select_3,
+				 ([o] terceiro | [a] terceira) | [o | a] número três
+				);
+<Select_4> : !tag(Select_4,
+				 ([o] quarto | [a] quarta) | [o | a] número quatro
+				);
+<Select_5> : !tag(Select_5,
+				 ([o] quinto | [a] quinta) | [o | a] número cinco
+				);
+<Select_6> : !tag(Select_6,
+				 ([o] sexto | [a] sexta) | [o | a] número seis
+				);

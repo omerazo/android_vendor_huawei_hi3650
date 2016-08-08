@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GB2312"?>
+<HwBeautyParams>
+	<Mode name="Preview">
+	<Level1 SkinSoften="20" SkinWhiten="18" FaceSlender="4" />
+	<Level2 SkinSoften="25" SkinWhiten="27" FaceSlender="5" />
+	<Level3 SkinSoften="30" SkinWhiten="36" FaceSlender="6" />
+	<Level4 SkinSoften="38" SkinWhiten="30" FaceSlender="7" />
+	<Level5 SkinSoften="45" SkinWhiten="38" FaceSlender="8" />
+	<Level6 SkinSoften="50" SkinWhiten="44" FaceSlender="9" />
+	<Level7 SkinSoften="55" SkinWhiten="52" FaceSlender="10" />
+	<Level8 SkinSoften="60" SkinWhiten="60" FaceSlender="11" />
+	<Level9 SkinSoften="65" SkinWhiten="65" FaceSlender="12" />
+	<Level10 SkinSoften="70" SkinWhiten="70" FaceSlender="13" />
+	</Mode>
+	<Mode name="Capture">
+	<Level1 SkinSoften="25" SkinWhiten="26" SkinRuddy="7" Contrast="7" EyeBrighten="10" FaceSlender="6" EyeEnlargement="13" />
+	<Level2 SkinSoften="35" SkinWhiten="31" SkinRuddy="10" Contrast="10" EyeBrighten="20" FaceSlender="7" EyeEnlargement="16" />
+	<Level3 SkinSoften="45" SkinWhiten="36" SkinRuddy="13" Contrast="13" EyeBrighten="30" FaceSlender="8" EyeEnlargement="19" />
+	<Level4 SkinSoften="50" SkinWhiten="41" SkinRuddy="17" Contrast="17" EyeBrighten="40" FaceSlender="9" EyeEnlargement="22" />
+	<Level5 SkinSoften="55" SkinWhiten="45" SkinRuddy="20" Contrast="20" EyeBrighten="50" FaceSlender="10" EyeEnlargement="25" />
+	<Level6 SkinSoften="60" SkinWhiten="47" SkinRuddy="22" Contrast="21" EyeBrighten="55" FaceSlender="11" EyeEnlargement="27" />
+	<Level7 SkinSoften="65" SkinWhiten="49" SkinRuddy="24" Contrast="23" EyeBrighten="60" FaceSlender="12" EyeEnlargement="29" />
+	<Level8 SkinSoften="70" SkinWhiten="51" SkinRuddy="26" Contrast="24" EyeBrighten="65" FaceSlender="13" EyeEnlargement="31" />
+	<Level9 SkinSoften="75" SkinWhiten="53" SkinRuddy="28" Contrast="25" EyeBrighten="70" FaceSlender="14" EyeEnlargement="33" />
+	<Level10 SkinSoften="80" SkinWhiten="55" SkinRuddy="30" Contrast="27" EyeBrighten="75" FaceSlender="15" EyeEnlargement="35" />
+	</Mode>
+</HwBeautyParams>

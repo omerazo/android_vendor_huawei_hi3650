@@ -1,0 +1,26 @@
+::Name
+LanguagePack: US English (v5.1.1)
+
+::Net
+nn_en_us_mfcc_16k_15_big_250_v5.1.1.raw
+
+::EnrollNet
+nn_en_us_mfcc_16k_15_big_250_v5.1.1.raw
+
+::Phoneme
+phonemeSearch_enUS_2_0.raw
+
+::SVSID
+svsid_enUS_2_0.raw
+
+::ParamAstart
+-800
+
+::ParamBstart
+850 
+
+::SVThreshold
+0.35
+
+::SVThresholdStep
+0.10

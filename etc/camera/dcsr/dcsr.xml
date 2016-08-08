@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312"?>
+<Config>
+    <GhostCorrection>
+        <LowThr>1</LowThr>
+		<HighThr>15</HighThr>
+    </GhostCorrection>
+</Config>

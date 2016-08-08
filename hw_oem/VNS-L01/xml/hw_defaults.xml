@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources>
+    <!--******************************** 1.PROTOCOL TEAM BEGIN -->
+    <integer ca_settings_on="1"/>
+    <!--DTS2015103008662 m00290952 20151030 begin-->
+    <!--DTS2015110602120 m00290952 20151106 begin-->
+    <string white_languages="en_US,ar_EG,de_DE,bs_BA,es_ES,uk_UA,fr_FR,pt_PT,ru_RU,zh_CN,zh_TW,zh_HK,es_US,ca_ES,cs_CZ,da_DK,el_GR,hu_HU,pt_BR,it_IT,ja_JP,lt_LT,lv_LV,bg_BG,nb_NO,pl_PL,ro_RO,et_EE,sk_SK,sr_RS,sv_SE,tr_TR,th_TH,fi_FI,in_ID,mk_MK,sl_SI,ms_MY,vi_VN,hr_HR,nl_NL,hi_IN,ko_KR,en_GB,iw_IL,eu_ES,gl_ES,ka_GE,az_AZ,uz_UZ,km_KH,si_LK,ur_PK,my_MM,my_ZG"/>
+    <!--DTS2015110602120 m00290952 20151106 end-->
+    <!--DTS2015103008662 m00290952 20151030 end-->
+    <integer hw_displayafterfirstring="0"/>
+    <integer hw_global_networkmode_settings_enable="1"/>
+    <string enable_sdn="true"/>
+    <integer show_mms_expired_status="1"/>
+	<string plmn_esm_flag="26001,23003,21910,50501,50502,27201,20404,21401,23415,23410,22201,71617,46003,26001,23003,21910"/>
+
+    <!--******************************** 1.PROTOCOL TEAM END -->
+    <!--******************************** 2.APP MANUFACTURE TEAM BEGIN -->
+
+    <!--******************************** 2.APP MANUFACTURE TEAM END -->
+    <!--******************************** 3.BASEAPP TEAM BEGIN -->
+    <string hw_devicenameandimei_custap="HUAWEI_Grace"/>
+    <integer settings.system.show_hwlock_first="0"/>
+    <!-- BEGIN PN:DTS2015121510939, Added by liqing lWX288597, 2015/12/16 -->
+    <integer settings.system.androidBeam="1"/>
+    <!-- END PN:DTS2015121510939, Added by liqing lWX288597, 2015/12/16 -->
+    <!-- DTS2015082106929 chenlu/00350830 20150821 begin -->
+    <!-- delate white_languages-->
+    <!-- DTS2015082106929 chenlu/00350830 20150821 end -->
+    <!-- DTS2015030902399 z00169648 20150309 begin -->
+    <!-- DTS2015030902399 z00169648 20150309  end -->
+<!-- BEGIN PN:DTS2016040802145, Modified by liyongzhe lWX274878, 2016/04/08 -->
+<string hw_def_theme="/system/themes/Default.hwt"/>
+<string hw_theme_sort="BlackLabel##Medal##Blues##Autumn##Colorful##Serenity" reset="true"/>
+<!-- END PN:DTS2016040802145, Modified by liyongzhe lWX274878, 2016/04/08 -->
+    <!--******************************** 3.BASEAPP TEAM END -->
+    <!--******************************** 4.MULTI-MEDIA TEAM BEGIN -->
+
+    <!--******************************** 4.MULTI-MEDIA TEAM END -->
+    <!--******************************** 5.FRAMEWORK TEAM BEGIN -->
+
+    <!--******************************** 5.FRAMEWORK TEAM END -->
+    <!--******************************** 6.DATA SERVICE TEAM BEGIN -->
+
+    <!--******************************** 6.DATA SERVICE TEAM END -->
+    <!--******************************** 7.APPLET TEAM BEGIN -->
+
+    <!--******************************** 7.APPLET TEAM END -->
+    <!--******************************** 8.CUSTOM TEAM BEGIN -->
+    <!-- BEGIN PN:DTS2015102600686  , Modified by xieyunfeng xWX282701, 2015/10/27 -->
+    <string default_input_method="com.nuance.swype.emui/com.nuance.swype.input.HuaweiIME"/>
+    <!-- END PN:DTS2015102600686, Modified by xieyunfeng xWX282701, 2015/10/27 -->
+    <!-- DTS2015102600671 twx287320 20151030 begin -->
+    <integer power_saving_on="0"/>
+    <string hw_networkmode_preference="9,3,2,1"/>
+    <!-- DTS2015102600671 twx287320 20151030  end -->
+    <!--******************************** 8.CUSTOM TEAM END -->
+    <!--BEGIN PN: DTS2016012506772  , Added by l00292418, 2016/01/25-->
+    <integer settings.global.wifi_sleep_policy="2"/>
+    <!--END PN: DTS2016012506772  , Added by l00292418, 2016/01/25-->
+    <!-- BEGIN PN:DTS2016033102546 , Added by lwx288597, 2016/03/31 -->
+    <string custom_certify_picture="/system/media/Oversea_L01.png" reset="true" />
+    <!-- END PN:DTS2016033102546 , Added by lwx288597, 2016/03/31 -->
+</resources>

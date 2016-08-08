@@ -1,0 +1,2 @@
+/data/dataapp/SetWifiAPNameAndPassWord/SetWifiAPNameAndPassWord.apk
+/data/dataapp/Huawei_Swype_for_Huawei/Huawei_Swype_for_Huawei.apk

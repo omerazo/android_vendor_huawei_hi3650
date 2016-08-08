@@ -1,0 +1,1 @@
+cloud_ota_dplmn_Version=01.00.004

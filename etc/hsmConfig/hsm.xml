@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HSM version="1.0">
+    <ResetInfos>
+        <ResetInfo id="0x0e" name="hungdetect" description="detect android boot over 120s" />
+        <ResetInfo id="0x15" name="AP_S_TSENSOR0" description="tsensor reset" />
+        <ResetInfo id="0x16" name="AP_S_TSENSOR1" description="tsensor reset" />
+        <ResetInfo id="0x17" name="AP_S_AWDT" description="ap dog reset" />
+        <ResetInfo id="0x18" name="LPM3_S_GLOBALWDT" description="global dog reset" />
+        <ResetInfo id="0x19" name="G3D_S_G3DTSENSOR" description="g3d tsensor reset" />
+        <ResetInfo id="0x1a" name="LPM3_S_LPMCURST" description="lpm3 dog reset" />
+        <ResetInfo id="0x1b" name="CP_S_CPTSENSOR" description="cp tsensor reset" packmodem="1" />
+        <ResetInfo id="0x1c" name="IOM3_S_IOMCURST" description="iom3 dog reset" />
+        <ResetInfo id="0x1d" name="ASP_S_ASPWD" description="asp dog reset" />
+        <ResetInfo id="0x1e" name="CP_S_CPWD" description="cp dog reset" packmodem="1" />
+        <ResetInfo id="0x1f" name="IVP_S_IVPWD" description="ivp dog reset" />
+        <ResetInfo id="0x20" name="ISP_S_ISPWD" description="isp dog reset" />
+        <ResetInfo id="0x21" name="AP_S_DDR_SELFREFLASH" description="ddr exception reset" />
+        <ResetInfo id="0x24" name="AP_S_PANIC" description="AP Panic" />
+        <ResetInfo id="0x25" name="AP_S_NOC" description="main bus reset" />
+        <ResetInfo id="0x26" name="AP_S_PMU" description="pmu reset" />
+        <ResetInfo id="0x27" name="AP_S_DDRC_SEC" description="ddrc exception protecting reset" />
+        <ResetInfo id="0x28" name="AP_S_GPIO" description="gpio exception reset" />
+        <ResetInfo id="0x2a" name="AP_S_DIE" description="ap die reset" />
+        <ResetInfo id="0x2f" name="CP_S_EXCEPTION" description="cp exception single reset" packmodem="1" />
+        <ResetInfo id="0x30" name="CP_S_RESETFAIL" description="cp exception reset failure" packmodem="1" />
+        <ResetInfo id="0x32" name="LPM3_S_EXCEPTION" description="lpm3 exception reset" />
+        <ResetInfo id="0x33" name="HIFI_S_EXCEPTION" description="hifi exception single reset" />
+        <ResetInfo id="0x34" name="HIFI_S_RESETFAIL" description="hifi exception single reset failure" />
+        <ResetInfo id="0x35" name="ISP_S_EXCEPTION" description="isp exception reset" />
+        <ResetInfo id="0x36" name="IVP_S_EXCEPTION" description="ivp exception reset" />
+        <ResetInfo id="0x37" name="IOM3_S_EXCEPTION" description="iom3 exception reset" />
+        <ResetInfo id="0x38" name="TEE_S_EXCEPTION" description="teeos exception reset" />
+        <!--<ResetInfo id="0x39" name="CP_S_NORMALRESET" description="cp normal reset" />-->
+    </ResetInfos>
+    <Pack>
+        <Sms>
+            <SmsKeyWords>
+                <SmsKeyWord>Call Lost</SmsKeyWord>
+                <SmsKeyWord>来电提醒</SmsKeyWord>
+                <SmsKeyWord>联通秘书</SmsKeyWord>
+                <SmsKeyWord>呼叫过您</SmsKeyWord>
+            </SmsKeyWords>
+            <SmsTimeFormats>
+                <SmsTimeFormat>[0-9]{4}年[0-9]{2}月[0-9]{2}日[0-9]{2}:[0-9]{2}</SmsTimeFormat>
+                <SmsTimeFormat>[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}</SmsTimeFormat>
+                <SmsTimeFormat>[0-9]{4}_[0-9]{2}_[0-9]{2} [0-9]{2}_[0-9]{2}_[0-9]{2}</SmsTimeFormat>
+                <SmsTimeFormat>[0-9]{2}月[0-9]{2}日[0-9]{2}时[0-9]{2}分</SmsTimeFormat>
+                <SmsTimeFormat>[0-9]{2}月[0-9]{2}日[0-9]{2}点[0-9]{2}分</SmsTimeFormat>
+            </SmsTimeFormats>
+            <SmsTimeFilters>
+                <SmsTimeFilter>年</SmsTimeFilter>
+                <SmsTimeFilter>月</SmsTimeFilter>
+                <SmsTimeFilter>日</SmsTimeFilter>
+                <SmsTimeFilter>时</SmsTimeFilter>
+                <SmsTimeFilter>分</SmsTimeFilter>
+                <SmsTimeFilter>点</SmsTimeFilter>
+                <SmsTimeFilter>_</SmsTimeFilter>
+                <SmsTimeFilter>:</SmsTimeFilter>
+            </SmsTimeFilters>
+        </Sms>
+    </Pack>
+</HSM>

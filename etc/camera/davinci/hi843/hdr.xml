@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Config>
+    <night_iso>6400</night_iso>
+    <night_exposure>12</night_exposure>
+
+    <ImageRegistrationMethod>1</ImageRegistrationMethod>
+
+    <GhostRemovalMethod>1</GhostRemovalMethod>
+    <LocalMotionDetection>
+        <MotionLowGray>10</MotionLowGray>
+        <MotionHighGray>20</MotionHighGray>
+        <MotionRatio>2.0</MotionRatio>
+    </LocalMotionDetection>
+    <LocalMotionCorrection>3</LocalMotionCorrection>
+
+    <ImageFusionMethod>1</ImageFusionMethod>
+    <ImageFusion>
+        <MinDarkWeight>-1.0</MinDarkWeight>
+        <MinBrightWeight>-1.0</MinBrightWeight>
+        <MaxBrightWeight>1.0</MaxBrightWeight>
+        <MaxDarkWeight>1.0</MaxDarkWeight>
+        <PyramidTopSize>2</PyramidTopSize>
+        <WeightCalcMethod>1</WeightCalcMethod>
+        <MinBrightDiv>96</MinBrightDiv>
+        <MaxBrightDiv>176</MaxBrightDiv>
+        <BlendCenter>128</BlendCenter>
+        <BlendSigma>0.1</BlendSigma>
+    </ImageFusion>
+
+    <PostProcessValid>1</PostProcessValid>
+    <PostProcess>
+        <DenoiseDarkThresh>255</DenoiseDarkThresh>
+    </PostProcess>
+</Config>

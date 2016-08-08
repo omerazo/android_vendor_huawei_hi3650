@@ -1,0 +1,4 @@
+<resources>
+    <bool is_support_ctrip="true"/>
+    <bool is_support_qunar="false"/>
+</resources>

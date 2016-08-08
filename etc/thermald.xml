@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--
+ * Copyright (C) 2014 Huawei Inc.
+ * Cpu Freq Config
+ *
+        TYPE                            AVALIABLE_VALUE
+        cpu                    480000 807000 1306000 1709000
+
+        cpu_a15                1402000 1805000 2112000 2362000
+
+        gpu                    120000000 240000000 360000000 480000000 680000000 800000000 900000000
+
+        ddr                    120000000 240000000 360000000 533000000 800000000 933000000
+
+        note:
+        1. if policy item has not configured, it means close cpupolicy of previous scene.
+        2. policy type default value is 0, policy value default value is -1
+        3. Don't set ddr_maxprofile for K3V3+ platform 
+        4. Don't set <threshold_up>0</threshold_up> and <threshold_down>0</threshold_down> for K3V3+ platform
+        last modify time:2014-10-18
+-->
+<thermal version="2.3">
+
+ <sensor_temp name="cpu" type="0" enable="true" min_temp="0" step="2" to_celsius="1">
+    <item>
+        <thresholds>46</thresholds>
+        <thresholds_clr>44</thresholds_clr>
+        <action>
+            <gpu>800000000</gpu>
+            <ucurrent>700</ucurrent>
+            <cpu_a15>1805000</cpu_a15>        
+        </action>
+    </item>
+    <item>
+        <thresholds>48</thresholds>
+        <thresholds_clr>46</thresholds_clr>
+        <action>
+            <cpu>1306000</cpu>
+            <gpu>680000000</gpu>
+            <ucurrent>700</ucurrent>
+            <cpu_a15>1402000</cpu_a15>        
+        </action>
+    </item>
+ </sensor_temp>
+
+ <sensor_temp name="pa" type="1" enable="true" min_temp="0" step="3" to_celsius="1">
+    <item>
+        <thresholds>44</thresholds>
+        <thresholds_clr>43</thresholds_clr>
+        <action>
+            <ucurrent>700</ucurrent>
+        </action>
+    </item>
+    <item>
+        <thresholds>46</thresholds>
+        <thresholds_clr>45</thresholds_clr>
+        <action>
+            <ucurrent>500</ucurrent>
+        </action>
+    </item>
+ </sensor_temp>
+
+</thermal>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resource>
+    <!-- sample period config, base_peroid(ms) is the base period, each group has different mutiple of base period
+      save_time is the cycle(minutes) to save json file, count_time is the time(minutes) of one json file record
+      max_keep_files is the the phone store the max number of res statistic files -->
+    <statistic base_peroid = '60000' save_interval='30' count_interval='10080' beta_count_interval='1440' max_keep_files='10'/>
+    <!-- group structure include id, name, cycle is the mutiple of base_peroid -->
+    <group id='10' name="NOTIFICATION">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='20' resource_strategy='2' resource_max_peroid='0' loop_interval='1000'></subType>
+        <subType id='1' name="APP_HW" resource_threshold='50' resource_strategy='2' resource_max_peroid='3' loop_interval='1000'></subType>
+        <subType id='2' name="SYS" resource_threshold='200' resource_strategy='2' resource_max_peroid='1' loop_interval='1000'></subType>
+        <subType id='3' name="TOTAL" resource_threshold='300' resource_strategy='2' resource_max_peroid='2' loop_interval='1000'></subType>
+    </group>
+    <group id='11' name="BROADCAST">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='30' resource_strategy='2' resource_max_peroid='3' loop_interval='1000'></subType>
+        <subType id='1' name="APP_HW" resource_threshold='500' resource_strategy='2' resource_max_peroid='3' loop_interval='1000'></subType>
+        <subType id='2' name="SYS" resource_threshold='800' resource_strategy='1' resource_max_peroid='5' loop_interval='1000'></subType>
+        <subType id='3' name="TOTAL" resource_threshold='1000' resource_strategy='1' resource_max_peroid='5' loop_interval='1000'></subType>
+    </group>
+    <group id='12' name="RECEIVER">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='500' resource_strategy='2' resource_max_peroid='0' loop_interval='1000'></subType>
+        <subType id='1' name="APP_HW" resource_threshold='500' resource_strategy='2' resource_max_peroid='0' loop_interval='1000'></subType>
+        <subType id='2' name="SYS" resource_threshold='1000' resource_strategy='1' resource_max_peroid='0' loop_interval='0'></subType>
+        <subType id='3' name="TOTAL" resource_threshold='3000' resource_strategy='2' resource_max_peroid='0' loop_interval='0'></subType>
+    </group>
+    <group id='13' name="ALARM">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='50' resource_strategy='2' resource_max_peroid='0' loop_interval='5000'></subType>
+        <subType id='1' name="APP_HW" resource_threshold='100' resource_strategy='2' resource_max_peroid='0' loop_interval='5000'></subType>
+        <subType id='2' name="SYS" resource_threshold='200' resource_strategy='1' resource_max_peroid='0' loop_interval='5000'></subType>
+        <subType id='3' name="TOTAL" resource_threshold='800' resource_strategy='1' resource_max_peroid='0' loop_interval='5000'></subType>
+    </group>
+    <group id='14' name="APPOPS">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='200' resource_strategy='2' resource_max_peroid='0' loop_interval='0'></subType>
+    </group>
+    <group id='15' name="PROVIDER">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='100' resource_strategy='2' resource_max_peroid='0' loop_interval='0'></subType>
+    </group>
+    <group id='16' name="PIDS">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='300' resource_strategy='500' resource_max_peroid='0' loop_interval='0'></subType>
+    </group>
+    <group id='17' name="CURSOR">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='50' resource_strategy='2' resource_max_peroid='0' loop_interval='60000'></subType>
+        <subType id='1' name="APP_HW" resource_threshold='50' resource_strategy='2' resource_max_peroid='0' loop_interval='60000'></subType>
+        <subType id='2' name="APP_SYS" resource_threshold='200' resource_strategy='1' resource_max_peroid='0' loop_interval='60000'></subType>
+        <subType id='3' name="APP_TOTAL" resource_threshold='1000' resource_strategy='1' resource_max_peroid='0' loop_interval='60000'></subType>
+    </group>
+    <group id='18' name="APPSERVICE">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='1' resource_strategy='2' resource_max_peroid='10' loop_interval='2000'></subType>
+        <subType id='1' name="APP_HW" resource_threshold='1' resource_strategy='2' resource_max_peroid='10' loop_interval='2000'></subType>
+        <subType id='2' name="APP_SYS" resource_threshold='1' resource_strategy='2' resource_max_peroid='10' loop_interval='2000'></subType>
+        <subType id='3' name="APP_TOTAL" resource_threshold='1' resource_strategy='2' resource_max_peroid='10' loop_interval='2000'></subType>
+    </group>
+    <group id='19' name="APP">
+        <subType id='0' name="APP_THIRDPARTY" resource_threshold='1' resource_strategy='2' resource_max_peroid='10' loop_interval='2000'></subType>
+        <subType id='1' name="APP_HW" resource_threshold='1' resource_strategy='2' resource_max_peroid='10' loop_interval='2000'></subType>
+        <subType id='2' name="APP_SYS" resource_threshold='1' resource_strategy='2' resource_max_peroid='10' loop_interval='2000'></subType>
+        <subType id='3' name="APP_TOTAL" resource_threshold='1' resource_strategy='2' resource_max_peroid='10' loop_interval='2000'></subType>
+    </group>
+    <group id='20' name="MEMORY" cycle_num='5' isCount="true">
+        <subType id='0' name="Total">
+            <level value='1024'/>
+            <level value='2048'/>
+            <level value='3072'/>
+            <level value='4096'/>
+        </subType>
+        <!-- 2G:200M,160M,100M; 3G:300M,240M,150M; 4G:400M,320M,200M -->
+        <subType id='1' name="MemFree" normal='12' warning='10' urgent='7'>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1280'/>
+            <level value='1536'/>
+            <level value='1792'/>
+            <level value='2048'/>
+            <level value='2560'/>
+            <level value='3072'/>
+            <level value='4096'/>
+        </subType>
+        <subType id='2' name="Buffers">
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1280'/>
+            <level value='1536'/>
+            <level value='1792'/>
+            <level value='2048'/>
+            <level value='2560'/>
+            <level value='3072'/>
+            <level value='4096'/>
+        </subType>
+        <!-- 2G:600M,700M,800M; 3G:900M,1050M,1200M; 4G:1200M,1400M,1600M -->
+        <subType id='3' name="Cached" normal='30' warning='35' urgent='40'>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1280'/>
+            <level value='1536'/>
+            <level value='1792'/>
+            <level value='2048'/>
+            <level value='2560'/>
+            <level value='3072'/>
+            <level value='4096'/>
+        </subType>
+        <subType id='4' name="SwapTotal">
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1280'/>
+            <level value='1536'/>
+            <level value='1792'/>
+            <level value='2048'/>
+            <level value='2560'/>
+            <level value='3072'/>
+            <level value='4096'/>
+        </subType>
+        <subType id='5' name="SwapFree" normal='100' warning='110' urgent='120'>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1280'/>
+            <level value='1536'/>
+            <level value='1792'/>
+            <level value='2048'/>
+            <level value='2560'/>
+            <level value='3072'/>
+            <level value='4096'/>
+        </subType>
+        <subType id='6' name="Slab">
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1280'/>
+            <level value='1536'/>
+            <level value='1792'/>
+            <level value='2048'/>
+            <level value='2560'/>
+            <level value='3072'/>
+            <level value='4096'/>
+        </subType>
+        <subType id='7' name="SUnreclaim">
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1280'/>
+            <level value='1536'/>
+            <level value='1792'/>
+            <level value='2048'/>
+            <level value='2560'/>
+            <level value='3072'/>
+            <level value='4096'/>
+        </subType>
+    </group>
+    <group id='21' name="CPU">
+    </group>
+    <group id='22' name="IO">
+    </group>
+    <group id='23' name="SCHEDGROUP">
+    </group>
+    <group id='24' name="ANR">
+    </group>
+    <group id='25' name="DELAY">
+    </group>
+    <group id='26' name="FRAMELOST">
+    </group>
+    <group id='100' name="BUDDYINFO" isCount="true">
+        <subType id='0' name="order0" normal='7' warning='6' urgent='3'>
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='600'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='2000'/>
+            <level value='3000'/>
+            <level value='4000'/>
+            <level value='5000'/>
+            <level value='10000'/>
+            <level value='20000'/>
+            <level value='786432'/>
+        </subType>
+        <subType id='1' name="order1">
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='600'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='2000'/>
+            <level value='3000'/>
+            <level value='4000'/>
+            <level value='5000'/>
+            <level value='10000'/>
+            <level value='20000'/>
+            <level value='393216'/>
+        </subType>
+        <subType id='2' name="order2">
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='600'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='2000'/>
+            <level value='3000'/>
+            <level value='4000'/>
+            <level value='5000'/>
+            <level value='10000'/>
+            <level value='20000'/>
+            <level value='196608'/>
+        </subType>
+        <subType id='3' name="order3">
+            <level value='20'/>
+            <level value='40'/>
+            <level value='60'/>
+            <level value='80'/>
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='5000'/>
+            <level value='10000'/>
+            <level value='20000'/>
+            <level value='98304'/>
+        </subType>
+        <subType id='4' name="order4">
+            <level value='20'/>
+            <level value='40'/>
+            <level value='60'/>
+            <level value='80'/>
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='5000'/>
+            <level value='10000'/>
+            <level value='20000'/>
+            <level value='49152'/>
+        </subType>
+        <subType id='5' name="order5">
+            <level value='20'/>
+            <level value='40'/>
+            <level value='60'/>
+            <level value='80'/>
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='5000'/>
+            <level value='10000'/>
+            <level value='20000'/>
+            <level value='24576'/>
+        </subType>
+        <subType id='6' name="order6">
+            <level value='10'/>
+            <level value='20'/>
+            <level value='30'/>
+            <level value='40'/>
+            <level value='50'/>
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='600'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='12288'/>
+        </subType>
+        <subType id='7' name="order7">
+            <level value='10'/>
+            <level value='20'/>
+            <level value='30'/>
+            <level value='40'/>
+            <level value='50'/>
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='600'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='6144'/>
+        </subType>
+        <subType id='8' name="order8">
+            <level value='10'/>
+            <level value='20'/>
+            <level value='30'/>
+            <level value='40'/>
+            <level value='50'/>
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='600'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='3072'/>
+        </subType>
+        <subType id='9' name="order9">
+            <level value='10'/>
+            <level value='20'/>
+            <level value='30'/>
+            <level value='40'/>
+            <level value='50'/>
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='600'/>
+            <level value='800'/>
+            <level value='1000'/>
+            <level value='1536'/>
+        </subType>
+        <subType id='10' name="order10">
+            <level value='10'/>
+            <level value='20'/>
+            <level value='30'/>
+            <level value='40'/>
+            <level value='50'/>
+            <level value='100'/>
+            <level value='200'/>
+            <level value='400'/>
+            <level value='600'/>
+            <level value='768'/>
+        </subType>
+    </group>
+    <group id='101' name="MAINSERVICES" isCount="true">
+        <subType id='0' name="/system/bin/mediaserver" normal='7' warning='10' urgent='15'>
+            <level value='32'/>
+            <level value='64'/>
+            <level value='96'/>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1536'/>
+            <level value='2048'/>
+            <level value='3072'/>
+        </subType>
+        <subType id='1' name="system_server" normal='80' warning='100' urgent='150'>
+            <level value='32'/>
+            <level value='64'/>
+            <level value='96'/>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1536'/>
+            <level value='2048'/>
+            <level value='3072'/>
+        </subType>
+        <subType id='2' name="/system/bin/HwCamCfgSvr" normal='100' warning='150' urgent='200'>
+            <level value='32'/>
+            <level value='64'/>
+            <level value='96'/>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1536'/>
+            <level value='2048'/>
+            <level value='3072'/>
+        </subType>
+        <subType id='3' name="com.huawei.camera" normal='100' warning='150' urgent='200'>
+            <level value='32'/>
+            <level value='64'/>
+            <level value='96'/>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1536'/>
+            <level value='2048'/>
+            <level value='3072'/>
+        </subType>
+        <subType id='4' name="com.android.keyguard" normal='80' warning='100' urgent='150'>
+            <level value='32'/>
+            <level value='64'/>
+            <level value='96'/>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1536'/>
+            <level value='2048'/>
+            <level value='3072'/>
+        </subType>
+        <subType id='5' name="com.android.systemui" normal='80' warning='100' urgent='150'>
+            <level value='32'/>
+            <level value='64'/>
+            <level value='96'/>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1536'/>
+            <level value='2048'/>
+            <level value='3072'/>
+        </subType>
+        <subType id='6' name="com.huawei.android.launcher" normal='80' warning='100' urgent='150'>
+            <level value='32'/>
+            <level value='64'/>
+            <level value='96'/>
+            <level value='128'/>
+            <level value='256'/>
+            <level value='384'/>
+            <level value='512'/>
+            <level value='640'/>
+            <level value='768'/>
+            <level value='896'/>
+            <level value='1024'/>
+            <level value='1536'/>
+            <level value='2048'/>
+            <level value='3072'/>
+        </subType>
+    </group>
+</resource>

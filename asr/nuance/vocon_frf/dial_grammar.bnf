@@ -1,0 +1,116 @@
+#BNF+EMV2.1;
+!grammar dial_grammar;
+!start <Wakeup>;
+!start <Dial>;
+!start <Dial_Special_Num>;
+!start <Contact>;
+!start <Dial_Confirm>;
+!start <Answer_Confirm>;
+!start <Hang_Up>;
+!start <Select_Num>;
+!start <Open_Google_Now>;
+!start <Find_Phone>;
+!slot <wakeup_word>;
+!slot <contacts>;
+
+<Wakeup>:<wakeup_word>;
+<Dial>:[<Wakeup>]<W_Dial>;
+<Dial_Special_Num>:[<Wakeup>]<W_Dial_Special_Num>;
+<Contact>:[<Wakeup>]<W_Contact>;
+<Dial_Confirm>:[<Wakeup>]<W_Dial_Confirm>;
+<Hang_Up>:[<Wakeup>]<W_Hang_Up>;
+<Answer_Confirm>:[<Wakeup>]<W_Answer_Confirm>;
+<Select_Num>:[<Wakeup>]<W_Select_Num>;
+<Open_Google_Now>:[<Wakeup>]<W_Open_Google_Now>;
+<Find_Phone>:[<Wakeup>]<W_Find_Phone>;
+
+<W_Dial>:<W_Dial_1>|<W_Dial_2>;
+<W_Dial_1>:<Dial_Action_1> <contacts> | 
+          <Dial_Action_1> <contacts> <at_Number_Type> | 
+          (appeler | appelle)  le (numéro | numéro de téléphone) <of_Number_Type> de <contacts> | 
+          <Dial_Action_1> <contacts> <at2_Number_Type>|
+          (appeler | appelle)  [son | le] (numéro | numéro de téléphone) <of_Number_Type> ;
+<W_Dial_2>:<Dial_Action_2>;
+<W_Dial_Special_Num>:(appeler | appelle | faire | fais | faites | composer | compose)  le <Special_Num>;
+<W_Contact>:<contacts>;
+<W_Dial_Confirm>:<Ok> | <Cancel>;
+<W_Answer_Confirm>:<Answer> | <Reject>;
+<W_Hang_Up>: <Reject>;
+<W_Select_Num>:<Select_1> | <Select_2> | <Select_3> | <Select_4> | <Select_5> | <Select_6>;
+<W_Open_Google_Now>:(ouvrir | ouvre | ouvrez | démarrer | démarre | lancer | lance) google now;
+<W_Find_Phone>:où (es-tu | êtes-vous) | t'es où ;
+
+<Dial_Action_1> : appeler | appelle | téléphoner à | téléphone à | (passer | passe) un appel à;
+<Dial_Action_2> : rappeler | rappelle | (appeler | appelle) de nouveau;
+<Number_Type> : !tag(Number_Type_TAG,   
+                  maison   !id(1) |
+                  domicile   !id(1) |
+                  personnel   !id(1) |
+                  bureau   !id(2) |
+                  travail   !id(2) |
+                  professionnel   !id(2) |
+                  portable   !id(3) |
+                  mobile   !id(3)
+                  );
+<of_Number_Type> : !tag(Number_Type_TAG,
+                    personnel   !id(1) |
+                    (du | de) domicile   !id(1) |
+                    de [la] maison   !id(1) |
+                    (de | du) bureau !id(2) |
+                    (de | du) travail !id(2) |
+                    professionnel  !id(2) |
+                    de portable  !id(3) |
+                    de mobile  !id(3)
+                    ); 
+<at_Number_Type> : !tag(Number_Type_TAG,
+                    à la maison  !id(1) |
+                    au bureau !id(2) |
+                    au travail !id(2) |
+                    sur (son | le) portable  !id(3) |
+                    sur (son | le) mobile   !id(3)
+                    );
+<at2_Number_Type> : !tag(Number_Type_TAG,
+                    à la maison   !id(1) |
+                    à son domicile   !id(1) |
+                    chez lui  !id(1) |
+                    chez elle   !id(1) |
+                    chez eux   !id(1) |
+                    au bureau   !id(2) |
+                    au travail   !id(2) |
+                    sur (le | son) portable   !id(3) |
+                    sur (le | son) mobile   !id(3)
+                    );        
+                    
+<Special_Num> : !tag(Special_Num,
+					15 | 17 | 18 | 112
+					);
+<Ok> : !tag(Ok,
+			ok | [oui] (d'accord | appeler | appelle)
+			);
+<Cancel> : !tag(Cancel,
+				(annuler | annule) [l'appel]
+				);
+<Answer> : !tag(Answer,
+			(répondre | réponds | répondez) [à l'appel] | (prendre | prends | prenez) l'appel
+			);
+<Reject> : !tag(Reject,
+				(refuser | refuse | rejeter | rejète) [l'appel] | ne pas répondre [à l'appel] | ne (réponds | répondez) pas [à l'appel]
+				);
+<Select_1> : !tag(Select_1,
+				 [le] premier | [la] première | [le | la] numéro un
+				);
+<Select_2> : !tag(Select_2,
+				 [le | la] deuxième | [le] second | [la] seconde | [le | la] numéro deux
+				);
+<Select_3> : !tag(Select_3,
+				 [le | la] troisième | [le | la] numéro trois
+				);
+<Select_4> : !tag(Select_4,
+				 [le | la] quatrième | [le | la] numéro quatre
+				);
+<Select_5> : !tag(Select_5,
+				 [le | la] cinquième | [le | la] numéro cinq
+				);
+<Select_6> : !tag(Select_6,
+				 [le | la] sixième | [le | la] numéro six
+				);

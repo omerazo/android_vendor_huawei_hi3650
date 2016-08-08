@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- DTS2015052103332 maxiufeng 00291265 20150521 created -->
+<multitaskconfig>
+    <resource resourcetype="11" resourcename="Broadcast" resourceextend="intentandroid.net.conn.CONNECTIVITY_CHANGE" resourcestatus="1" statusname="Normal">
+        <!-- DTS2016051002689  mwx306152 20160512 stop broadcast mtm control start -->
+        <!-- <policy policytype="4" policyname="Delay" policyvalue="">
+            <condition conditiontype="1001" conditionname="Thirdpartapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="cts" combinedcondition="1001"></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="xts" combinedcondition="1001"></condition>
+        </policy> -->
+        <!-- DTS2016051002689  mwx306152 20160512 stop broadcast mtm control end -->
+    </resource>
+    <resource resourcetype="15" resourcename="Provider" resourceextend="content://com.android.contacts" resourcestatus="1" statusname="Normal">
+        <policy policytype="4" policyname="Delay" policyvalue="">
+            <condition conditiontype="1001" conditionname="Thirdpartapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1002" conditionname="hwinstallapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="cts" combinedcondition="1001"></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="xts" combinedcondition="1001"></condition>
+        </policy>
+    </resource>    
+    <resource resourcetype="15" resourcename="Provider" resourceextend="content://settings" resourcestatus="1" statusname="Normal">
+        <policy policytype="4" policyname="Delay" policyvalue="">
+            <condition conditiontype="1001" conditionname="Thirdpartapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1002" conditionname="hwinstallapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="cts" combinedcondition="1001"></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="xts" combinedcondition="1001"></condition>
+        </policy>
+    </resource>
+    <resource resourcetype="15" resourcename="Provider" resourceextend="content://media" resourcestatus="1" statusname="Normal">
+        <policy policytype="4" policyname="Delay" policyvalue="">
+            <condition conditiontype="1001" conditionname="Thirdpartapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1002" conditionname="hwinstallapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="cts" combinedcondition="1001"></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="xts" combinedcondition="1001"></condition>
+        </policy>
+    </resource>
+    <resource resourcetype="21" resourcename="CPUgroup" resourceextend="fg-service" resourcestatus="5" statusname="topvisible">
+       <policy policytype="512" policyname="Change" policyvalue="6">
+            <condition conditiontype="1001" conditionname="Thirdpartapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1002" conditionname="hwinstallapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+    </resource>
+    <resource resourcetype="21" resourcename="CPUgroup" resourceextend="force-fg" resourcestatus="5" statusname="topvisible">
+       <policy policytype="512" policyname="Change" policyvalue="6">
+            <condition conditiontype="1001" conditionname="Thirdpartapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1002" conditionname="hwinstallapp" conditionattribute="1" conditionextend="" combinedcondition=""></condition>       
+       </policy>
+    </resource>
+    <!-- memory -->
+    <resource resourcetype="20" resourcename="Memory" resourceextend="SwapFree" resourcestatus="2" statusname="Waring">
+       <!-- shrink -->
+       <policy policytype="128" policyname="Memoryshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+       <!-- process shrink -->
+       <policy policytype="1024" policyname="Processshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+    </resource>
+    <resource resourcetype="20" resourcename="Memory" resourceextend="SwapFree" resourcestatus="4" statusname="Urgent">
+       <!-- shrink -->
+       <policy policytype="128" policyname="Memoryshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+       <!-- process shrink -->
+       <policy policytype="1024" policyname="Processshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+    </resource>
+    <resource resourcetype="20" resourcename="Memory" resourceextend="Cached" resourcestatus="2" statusname="Waring">
+       <!-- drop cache -->
+       <policy policytype="256" policyname="Dropcache" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+       <!-- process shrink -->
+       <policy policytype="1024" policyname="Processshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+    </resource>
+    <resource resourcetype="20" resourcename="Memory" resourceextend="Cached" resourcestatus="4" statusname="Urgent">
+       <!-- drop cache -->
+       <policy policytype="256" policyname="Dropcache" policyvalue=""></policy>
+       <!-- process shrink -->
+       <policy policytype="1024" policyname="Processshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+    </resource>
+    <resource resourcetype="20" resourcename="Memory" resourceextend="MemFree" resourcestatus="2" statusname="Waring">
+       <!-- process kill -->
+       <policy policytype="32" policyname="Processkill" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.tencent.mm" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.systemui:screenshot" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="android.process.acore" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.systemui.screenshot" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.providers.contacts" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.providers.userdictionary" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.motionservice" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.motionservice:MotionService" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.health" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.health:DeviceService" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.health:DataEngineService" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.settings" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="android.process.media" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.providers.media" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.contacts" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.android.totemweather" combinedcondition=""></condition>
+       </policy>
+       <!-- shrink -->
+       <policy policytype="128" policyname="Memoryshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+       <!-- process shrink -->
+       <policy policytype="1024" policyname="Processshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+    </resource>
+    <resource resourcetype="20" resourcename="Memory" resourceextend="MemFree" resourcestatus="4" statusname="Urgent">
+       <!-- process kill -->
+       <policy policytype="32" policyname="Processkill" policyvalue="">
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.tencent.mm" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.systemui:screenshot" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="android.process.acore" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.systemui.screenshot" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.providers.contacts" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.providers.userdictionary" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.motionservice" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.motionservice:MotionService" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.health" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.health:DeviceService" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.health:DataEngineService" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.settings" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="android.process.media" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.providers.media" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.android.contacts" combinedcondition=""></condition>
+            <condition conditiontype="1012" conditionname="packagecompare" conditionattribute="2" conditionextend="com.huawei.android.totemweather" combinedcondition=""></condition>
+       </policy>
+       <!-- shrink -->
+       <policy policytype="128" policyname="Memoryshrink" policyvalue=""></policy>
+       <!-- process shrink -->
+       <policy policytype="1024" policyname="Processshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+    </resource>
+    <resource resourcetype="20" resourcename="Memory" resourceextend="BUDDYINFO" resourcestatus="2" statusname="Waring">
+       <!-- shrink -->
+       <policy policytype="128" policyname="Memoryshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+    </resource>
+    <resource resourcetype="20" resourcename="Memory" resourceextend="BUDDYINFO" resourcestatus="4" statusname="Urgent">
+       <!-- shrink -->
+       <policy policytype="128" policyname="Memoryshrink" policyvalue="">
+            <condition conditiontype="1011" conditionname="screenoff" conditionattribute="1" conditionextend="" combinedcondition=""></condition>
+       </policy>
+    </resource>
+</multitaskconfig>

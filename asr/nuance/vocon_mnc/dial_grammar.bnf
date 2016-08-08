@@ -1,0 +1,86 @@
+#BNF+EMV2.1;
+!grammar dial_grammar;
+!start <Wakeup>;
+!start <Dial>;
+!start <Dial_Special_Num>;
+!start <Contact>;
+!start <Dial_Confirm>;
+!start <Answer_Confirm>;
+!start <Hang_Up>;
+!start <Select_Num>;
+!start <Open_Google_Now>;
+!start <Find_Phone>;
+!slot <wakeup_word>;
+!slot <contacts>;
+
+<Wakeup>:<wakeup_word>;
+<Dial>:[<Wakeup>]<W_Dial>;
+<Dial_Special_Num>:[<Wakeup>]<W_Dial_Special_Num>;
+<Contact>:[<Wakeup>]<W_Contact>;
+<Dial_Confirm>:[<Wakeup>]<W_Dial_Confirm>;
+<Answer_Confirm>:[<Wakeup>]<W_Answer_Confirm>;
+<Hang_Up>:[<Wakeup>]<W_Hang_Up>;
+<Select_Num>:[<Wakeup>]<W_Select_Num>;
+<Open_Google_Now>:[<Wakeup>]<W_Open_Google_Now>;
+<Find_Phone>:[<Wakeup>]<W_Find_Phone>;
+
+<W_Dial>:<W_Dial_1>|<W_Dial_2>|<W_Dial_3>;
+<W_Dial_1>:(<Dial_Action_1>|<Dial_Action_2>) [[<Action_Filter1>] <contacts> [[<Action_Filter2>] <Number_Type>] ["号码"]];
+<W_Dial_2>:<Action_Filter1> <contacts> [[<Action_Filter2>] <Number_Type>] ["号码"] <Dial_Action_1>;
+<W_Dial_3>:<Dial_Action_3>;
+<W_Dial_Special_Num>:(<Dial_Action_1>|<Dial_Action_2>) <Special_Num>;
+<W_Contact>:<contacts>;
+<W_Dial_Confirm>:<Ok> | <Cancel>;
+<W_Answer_Confirm>:<Answer> | <Reject>;
+<W_Hang_Up>: <Reject>;
+<W_Select_Num>:<Select_1> | <Select_2> | <Select_3> | <Select_4> | <Select_5> | <Select_6>;
+<W_Open_Google_Now>:"打开 Google Now";
+<W_Find_Phone>:"你在哪"|"你在哪里"|"你在哪儿"|"你在哪儿呀";
+
+<Dial_Action_1> : 打电话;
+<Dial_Action_2> : 呼叫;
+<Dial_Action_3> : 重拨;
+<Number_Type> : !tag(Number_Type_TAG,   
+					"住宅"   !id(1) |
+					"单位"   !id(2) |
+					"手机" 	 !id(3)
+					);
+<Action_Filter1> : 给;					
+<Action_Filter2> : 的;
+<Special_Num> : !tag(Special_Num,
+					9 1 1|
+					1 1 2|
+					1 1 0|
+					1 1 8|
+					1 1 9
+					);
+<Ok> : !tag(Ok,
+			呼叫
+			);
+<Cancel> : !tag(Cancel,
+				取消
+				);
+<Answer> : !tag(Answer,
+			接听
+			);
+<Reject> : !tag(Reject,
+				挂断
+				);
+<Select_1> : !tag(Select_1,
+				 一|第一个|第一位
+				);
+<Select_2> : !tag(Select_2,
+				 二|第二个|第二位
+				);
+<Select_3> : !tag(Select_3,
+				 三|第三个|第三位
+				);
+<Select_4> : !tag(Select_4,
+				 四|第四个|第四位
+				);
+<Select_5> : !tag(Select_5,
+				 五|第五个|第五位
+				);
+<Select_6> : !tag(Select_6,
+				 六|第六个|第六位
+				);

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<!-- BEGIN PN:DTS2015110504682,  Modified by gwx235591, 2015/12/1 -->
+<!-- BEGIN PN:DTS2016020405921,  Modified by zwx334275, 2016/2/5 -->
+<!-- BEGIN PN:DTS2016022704928,  Modified by lwx206914, 2016/02/27 -->
+<!-- BEGIN PN:DTS2016030103805,  Modified by gwx235591, 2016/03/01 -->
+<!-- BEGIN PN:DTS2016031100309,  Modified by gwx235591, 2016/03/11 -->
+<favorites xmlns:launcher="http://schemas.android.com/apk/res/com.huawei.android.launcher">
+    <!-- 运动健康，海外-->
+    <favorite
+        launcher:packageName="com.huawei.health"
+        launcher:className="com.huawei.healthcloud.cardui.MainActivity"
+        launcher:container="-100"
+        launcher:screen="2"
+        launcher:x="0"
+        launcher:y="2"
+        launcher:op="insertinto"/>
+</favorites>
+<!-- END PN:DTS2016031100309,  Modified by gwx235591, 2016/03/11 -->
+<!-- END PN:DTS2016030103805,  Modified by gwx235591, 2016/03/01 -->
+<!-- END PN:DTS2016022704928,  Modified by lwx206914, 2016/02/27 -->
+<!-- END PN:DTS2016020405921,  Modified by zwx334275, 2016/2/5 -->
+<!-- END PN:DTS2015110504682,  Modified by gwx235591, 2015/12/1 -->
