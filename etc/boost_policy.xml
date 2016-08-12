@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+        TYPE                                            AVALIABLE_VALUE
+        cpu_0_available_freq:   480000 807000 1018000 1306000 1517000 1805000
+        cpu_4_available_freq:   807000 1210000 1517000 1805000 2016000 2304000
+        gpu_available_freq  :   360000000 480000000 650000000 800000000 900000000
+-->
+
+<perf_hub_config>
+    <!--perf_event name="templet" id="0">
+        <duration>0</duration>
+        <cpu0_freq_min>403200</cpu0_freq_min>
+        <cpu0_freq_max>1516800</cpu0_freq_max>
+        <cpu4_freq_min>1017600</cpu4_freq_min>
+        <cpu4_freq_max>2016000</cpu4_freq_max>
+        <gpu_freq_min>288000000</gpu_freq_min>
+        <gpu_freq_max>680000000</gpu_freq_max>
+        <hmp_thres_up>978</hmp_thres_up>
+        <hmp_thres_down>672</hmp_thres_down>
+    </perf_event-->
+
+    <perf_event name="boot_complete" id="0">
+        <duration>0</duration>
+        <cpu0_freq_min>480000</cpu0_freq_min>
+        <cpu0_freq_max>1805000</cpu0_freq_max>
+        <cpu4_freq_min>807000</cpu4_freq_min>
+        <cpu4_freq_max>2304000</cpu4_freq_max>
+        <gpu_freq_min>360000000</gpu_freq_min>
+        <gpu_freq_max>900000000</gpu_freq_max>
+        <hmp_thres_up>978</hmp_thres_up>
+        <hmp_thres_down>672</hmp_thres_down>
+    </perf_event>
+
+    <perf_event name="app_start" id="3">
+        <duration>1500</duration>
+        <cpu0_freq_min>1805000</cpu0_freq_min>
+        <cpu4_freq_min>2304000</cpu4_freq_min>
+        <gpu_freq_min>900000000</gpu_freq_min>
+        <hmp_thres_up>300</hmp_thres_up>
+        <hmp_thres_down>150</hmp_thres_down>
+    </perf_event>
+
+    <perf_event name="window_switch" id="4">
+        <duration>500</duration>
+        <cpu0_freq_min>1805000</cpu0_freq_min>
+        <cpu4_freq_min>2304000</cpu4_freq_min>
+        <gpu_freq_min>900000000</gpu_freq_min>
+        <hmp_thres_up>300</hmp_thres_up>
+        <hmp_thres_down>150</hmp_thres_down>
+    </perf_event>
+
+    <perf_event name="rotation" id="5">
+        <duration>1000</duration>
+        <cpu0_freq_min>1805000</cpu0_freq_min>
+        <cpu4_freq_min>2304000</cpu4_freq_min>
+        <gpu_freq_min>900000000</gpu_freq_min>
+        <hmp_thres_up>300</hmp_thres_up>
+        <hmp_thres_down>150</hmp_thres_down>
+    </perf_event>
+
+    <perf_event name="list_fling" id="7">
+        <duration>5000</duration>
+        <cpu0_freq_min>1306000</cpu0_freq_min>
+        <hmp_thres_up>700</hmp_thres_up>
+        <hmp_thres_down>256</hmp_thres_down>
+    </perf_event>
+</perf_hub_config>

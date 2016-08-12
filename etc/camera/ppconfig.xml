@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="GB2312"?>
+<PPConfig>
+	<Mode name="davinci_front" switcher="1" >
+		<PPAlgo name="ldc" />
+		<PPAlgo name="davincicl" />
+	</Mode>
+	<Mode name="davinci_rear" switcher="1" >
+		<PPAlgo name="davincicl" />
+	</Mode>
+	<!-- Every Snapshot can be configured as ON or OFF. -->
+	<!-- Every Snapshot can have one or more algothirms(PPAlgo). -->
+	<!-- Algo order is important. -->
+	<!-- If the order is Davinci and HDR, then every frame will be denoised by Davinci algothirm firstly, then HDR. -->
+	<!-- If the order is HDR and Davinci, then HDR firstly, the result frame will be denoised by Davinci. -->
+	<Mode name="hdr" switcher="1">
+		<PPAlgo name="hdr" />
+		<PPAlgo name="davincicl" />
+		<PPAlgo name="sr" />
+	</Mode>
+	<Mode name="smart_hdr_rear" switcher="1">
+		<PPAlgo name="hdr" />
+		<PPAlgo name="davincicl" />
+		<PPAlgo name="sr" />
+	</Mode>
+	<Mode name="smart_hdr_front" switcher="1">
+		<PPAlgo name="hdr" />
+		<PPAlgo name="davincicl" />
+		<PPAlgo name="sr" />
+	</Mode>
+	<Mode name="digitalzoom" switcher="1">
+		<PPAlgo name="digitalzoom" />
+	</Mode>
+	<Mode name="multidenoise" switcher="1">
+		<PPAlgo name="multidenoise" />
+	</Mode>
+	<Mode name="burstshot" switcher="1">
+	</Mode>
+	<Mode name="bestshot" switcher="1">
+		<PPAlgo name="bestshot" />
+	</Mode>
+	<Mode name="beauty_front_extisp" switcher="0">
+		<PPAlgo name="HwBeautyPpAlgo" />
+		<PPAlgo name="ldc" />
+		<PPAlgo name="davincicl" />
+	</Mode>
+	<Mode name="beauty_front_noneextisp" switcher="1">
+		<PPAlgo name="davincicl" />
+		<PPAlgo name="HwBeautyPpAlgo" />
+		<PPAlgo name="ldc" />
+	</Mode>
+	<Mode name="beauty_rear_extisp" switcher="0">
+		<PPAlgo name="HwBeautyPpAlgo" />
+		<PPAlgo name="davincicl" />
+	</Mode>
+	<Mode name="beauty_rear_noneextisp" switcher="1">
+		<PPAlgo name="davincicl" />
+		<PPAlgo name="HwBeautyPpAlgo" />
+
+	</Mode>
+	<Mode name="edof" switcher="0">
+		<PPAlgo name="edof" />
+		<PPAlgo name="sr" />
+		<PPAlgo name="refocus" />
+	</Mode>
+	<Mode name="sr" switcher="0">
+	</Mode>
+	<Mode name="fastshot" switcher="0">
+		<PPAlgo name="edof" />
+		<PPAlgo name="sr" />
+	</Mode>
+	<Mode name="allfocus" switcher="1">
+		<PPAlgo name="allfocus" />
+	</Mode>
+	<Mode name="calib" switcher="0" >
+		<PPAlgo name="calibinfo" />
+		<PPAlgo name="davincicl" />
+	</Mode>
+	<Mode name="macro" switcher="0">
+		<PPAlgo name="edof" />
+		<PPAlgo name="sr" />
+	</Mode>
+	<Mode name="beauty_multidenoise" switcher="1">
+		<PPAlgo name="multidenoise" />
+		<PPAlgo name="HwBeautyPpAlgo" />
+	</Mode>
+	<Mode name="beauty_hdr_rear" switcher="1">
+		<PPAlgo name="hdr" />
+		<PPAlgo name="davincicl" />
+		<PPAlgo name="HwBeautyPpAlgo" />
+		<PPAlgo name="sr" />
+	</Mode>
+	<Mode name="beauty_hdr_front" switcher="1">
+		<PPAlgo name="hdr" />
+		<PPAlgo name="davincicl" />
+		<PPAlgo name="HwBeautyPpAlgo" />
+		<PPAlgo name="ldc" />
+	</Mode>
+	<Mode name="nicefood" switcher="1">
+		<PPAlgo name="NiceFoodPpAlgo" />
+		<PPAlgo name="davincicl" />
+	</Mode>
+	<Mode name="bshutter" switcher="1">
+		<PPAlgo name="pp_bshutter" />
+	</Mode>
+	<Mode name="HDFlash" switcher="1">
+		<PPAlgo name="HDFlashPpAlgo" />
+		<PPAlgo name="sr" />
+	</Mode>
+</PPConfig>

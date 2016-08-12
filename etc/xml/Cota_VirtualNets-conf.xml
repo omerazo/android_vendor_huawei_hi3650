@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<virtualNets version="1">
+    <!--
+    20416	FF	T-Mobile NL	NL Customization
+    20420	FF	T-Mobile NL	NL Customization
+
+    20416	5F	Ben	Ben Customization
+
+    20416	Other	not applicable	Open Market
+    20420	Other	not applicable	Open Market
+    -->
+    <!-- NL open market -->
+    <virtualNet carrier="NL09" ons_name="NL" operator_key="20416F09"
+            numeric="20416"
+            virtual_net_rule="1"
+            imsi_start="20416" />
+    <virtualNet carrier="NL09" ons_name="NL" operator_key="20416F09"
+            numeric="20420"
+            virtual_net_rule="1"
+            imsi_start="20420" />
+
+    <!-- NL, T-Mobile Netherlands(NL), GID:FF -->
+    <virtualNet carrier="NL01" ons_name="T-Mobile" operator_key="20416F01"
+            numeric="20416"
+            virtual_net_rule="2"
+            gid1="0xFF"
+            gid_mask="0xFF" />
+    <virtualNet carrier="NL01" ons_name="T-Mobile" operator_key="20416F01"
+            numeric="20416"
+            virtual_net_rule="3"
+			spn="T-Mobile  NL" />
+    <virtualNet carrier="NL01" ons_name="T-Mobile" operator_key="20416F01"
+            numeric="20420"
+            virtual_net_rule="2"
+            gid1="0xFF"
+            gid_mask="0xFF" />
+    <virtualNet carrier="NL01" ons_name="T-Mobile" operator_key="20416F01"
+            numeric="20420"
+            virtual_net_rule="3"
+			spn="T-Mobile  NL" />
+
+    <!-- NL, Ben(BN), GID:5F -->
+    <virtualNet carrier="NL02" ons_name="Ben" operator_key="20416F02"
+            numeric="20416"
+            virtual_net_rule="2"
+            gid1="0x5F"
+            gid_mask="0xFF" />
+	<virtualNet carrier="NL02" ons_name="Ben" operator_key="20416F02" 
+			numeric="20416"
+			virtual_net_rule="3"
+			spn="Ben NL" />
+
+    <!--
+    26201	01	TMD Postpaid Standard	T-D Customization
+    26201	02	TMD Xtra (all)	T-D Customization
+    26201	03	CombiCardTeens (all)	T-D Customization
+    26201	04	locked for "twinbill" (perso value: "01")	T-D Customization
+    26201	99	TMD EEK	T-D Customization
+
+    26201	44	Congstar Postpaid & Prepaid	Congstar Customization
+
+    26201	Other	not applicable	Open Market
+    -->
+    <!-- DE open market -->
+    <virtualNet carrier="DE09" ons_name="Other" operator_key="26201F09"
+			numeric="26201" 
+            virtual_net_rule="1"
+            imsi_start="26201" />
+
+    <!-- DE TMD Postpaid Standard, GID:01 -->
+    <virtualNet carrier="DE01" ons_name="DE" operator_key="26201F01"
+			numeric="26201"
+            virtual_net_rule="2"
+            gid1="0x01"
+            gid_mask="0xFF" />
+    <!-- DE TMD Xtra, GID:02 -->
+    <virtualNet carrier="DE01" ons_name="DE" operator_key="26201F01"
+			numeric="26201"
+            virtual_net_rule="2"
+            gid1="0x02"
+            gid_mask="0xFF" />
+    <!-- DE CombiCardTeens, GID:03 -->
+    <virtualNet carrier="DE01" ons_name="DE" operator_key="26201F01"
+			numeric="26201"
+            virtual_net_rule="2"
+            gid1="0x03"
+            gid_mask="0xFF"
+            />
+    <!-- DE locked for "twinbill", GID:04 -->
+    <virtualNet carrier="DE01" ons_name="DE" operator_key="26201F01"
+            numeric="26201"
+            virtual_net_rule="2"
+            gid1="0x04"
+            gid_mask="0xFF" />
+    <!-- DE TMD EEK, GID:99 -->
+    <virtualNet carrier="DE01" ons_name="DE" operator_key="26201F01"
+            numeric="26201"
+            virtual_net_rule="2"
+            gid1="0x99"
+            gid_mask="0xFF"
+            />
+	<virtualNet carrier="DE01" ons_name="DE" operator_key="26201F01" 
+			numeric="26201"
+			virtual_net_rule="3"
+			spn="Telekom.de" />
+	<virtualNet carrier="DE01" ons_name="DE" operator_key="26201F01" 
+			numeric="26201"
+			virtual_net_rule="3"
+			spn="T-Mobile D" />
+	<virtualNet carrier="DE01" ons_name="DE" operator_key="26201F01" 
+			numeric="26201"
+			virtual_net_rule="3"
+			spn="Business" />
+	<virtualNet carrier="DE01" ons_name="DE" operator_key="26201F01" 
+			numeric="26201"
+			virtual_net_rule="3"
+			spn="Privat" />
+
+    <!-- DE Congstar Postpaid & Prepaid, GID:44 -->
+    <virtualNet carrier="DE02" ons_name="congstar" operator_key="26201F02"
+            numeric="26201"
+            virtual_net_rule="2"
+            gid1="0x44"
+            gid_mask="0xFF" />
+	<virtualNet carrier="DE02" ons_name="congstar" operator_key="26201F02" 
+			numeric="26201"
+			virtual_net_rule="3"
+			spn="congstar" />
+	<virtualNet carrier="DE02" ons_name="congstar" operator_key="26201F02" 
+			numeric="26201"
+			virtual_net_rule="3"
+			spn="congstar.de" />
+
+    <!-- Greece
+    202	01	not applicable	not applicable	any	any	 GR Customization
+    -->
+	<!-- Open market -->
+    <virtualNet carrier="GR09" ons_name="other" operator_key="20201F09"
+            numeric="20201"
+            virtual_net_rule="1"
+            imsi_start="20201" />
+	<!-- COSMOTE(GR) -->
+    <virtualNet carrier="GR01" ons_name="COSMOTE" operator_key="20201F01"
+            numeric="20201"
+            virtual_net_rule="2"
+            gid1="0xFF"
+            gid_mask="0xFF" />
+
+    <!-- Poland
+    260	02	T-Mobile.pl	xx542D4D6F62696C652E706CFFFFFFFFFF	not applicable	not applicable	PL Customization
+    260	02	T-Mobile.pl Q	xx542D4D6F62696C652E706C2051FFFFFF	not applicable	not applicable	PL Customization
+    260	02	heyah	xx6865796168FFFFFFFFFFFFFFFFFFFFFF	not applicable	not applicable	Heyah Customization
+    260	02	tu biedronka	xx74752062696564726F6E6B61FFFFFFFF	not applicable	not applicable	Open Market
+    260	02	Other value	Other value	not applicable	not applicable	Open Market
+    260	02	not applicable	not applicable	11	Postpaid	PL Customization
+    260	02	not applicable	not applicable	12	Postpaid - NFC	PL Customization
+    260	02	not applicable	not applicable	16	Postpaid - M2M	PL Customization
+    260	02	not applicable	not applicable	17	Postpaid  Business	PL Customization
+    260	02	not applicable	not applicable	21	Prepaid	tbd
+    260	02	not applicable	not applicable	22	Prepaid NFC	tbd
+    260	02	not applicable	not applicable	23	Prepaid Heyah	Heyah Customization
+    260	02	not applicable	not applicable	24	Prepaid (activation on demand)	tbd
+    260	02	not applicable	not applicable	25	Prepaid Biedronka	tbd
+    260	02	not applicable	not applicable	26	Prepaid M2M	tbd
+    260	02	not applicable	not applicable	Other value	not applicable	Open Market
+    -->
+	<!-- Open market -->
+    <virtualNet carrier="PL09" ons_name="other" operator_key="26002F09"
+            numeric="26002"
+            virtual_net_rule="1"
+            imsi_start="26002" />
+
+	<!-- T-Mobile Polska(PL) -->
+    <virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01"
+            numeric="26002"
+            virtual_net_rule="2"
+            gid1="0x11"
+            gid_mask="0xFF" />
+    <virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01"
+            numeric="26002"
+            virtual_net_rule="2"
+            gid1="0x12"
+            gid_mask="0xFF" />
+    <virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01"
+            numeric="26002"
+            virtual_net_rule="2"
+            gid1="0x16"
+            gid_mask="0xFF" />
+    <virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01"
+            numeric="26002"
+            virtual_net_rule="2"
+            gid1="0x17"
+            gid_mask="0xFF" />
+    <virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01"
+            numeric="26002"
+            virtual_net_rule="2"
+            gid1="0x21"
+            gid_mask="0xFF" />
+    <virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01"
+            numeric="26002"
+            virtual_net_rule="2"
+            gid1="0x22"
+            gid_mask="0xFF" />
+    <virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01"
+            numeric="26002"
+            virtual_net_rule="2"
+            gid1="0x24"
+            gid_mask="0xFF" />
+    <virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01"
+            numeric="26002"
+            virtual_net_rule="2"
+            gid1="0x26"
+            gid_mask="0xFF" />
+	<virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01" 
+			numeric="26002"
+			virtual_net_rule="3"
+			spn="T-Mobile.pl" />
+	<virtualNet carrier="PL01" ons_name="Polska" operator_key="26002F01" 
+			numeric="26002"
+			virtual_net_rule="3"
+			spn="T-Mobile.pl Q" />
+
+	<!-- Heyah(HY) -->
+    <virtualNet carrier="PL02" ons_name="Heyah" operator_key="26002F02"
+            numeric="26002"
+            virtual_net_rule="2"
+            gid1="0x23"
+            gid_mask="0xFF" />
+	<virtualNet carrier="PL02" ons_name="Heyah" operator_key="26002F02" 
+			numeric="26002"
+			virtual_net_rule="3"
+			spn="heyah" />
+
+
+    <!-- Austria
+    232	03	tbd	tbd	tbd	tbd	TMA Customization
+    232	07	tbd	tbd	tbd	tbd	Telering Customization
+    232	tbd	tbd	tbd	Other value	not applicable	Open Market
+    -->
+	<!-- Open market -->
+	<virtualNet carrier="AU09" ons_name="Other" operator_key="23203F09" 
+			numeric="23203"
+			virtual_net_rule="1"
+			imsi_start="23203" />
+	<virtualNet carrier="AU09" ons_name="Other" operator_key="23203F09"
+			numeric="23207"
+			virtual_net_rule="1"
+			imsi_start="23207" />
+    <!-- Austria TMA T-Mobile Austria(AT)-->
+	<virtualNet carrier="AU01" ons_name="TMA" operator_key="23203F01"
+			numeric="23203"
+			virtual_net_rule="2"
+			gid1="0x01"
+			gid_mask="0xFF" />
+    <!-- Austria Tele.ring(TR) -->
+    <virtualNet carrier="AU02" ons_name="Telering" operator_key="23203F02"
+			numeric="23207"
+			virtual_net_rule="2"
+			gid1="0x07"
+			gid_mask="0xFF" />
+    <virtualNet carrier="AU02" ons_name="Telering" operator_key="23203F02"
+			numeric="23207"
+			virtual_net_rule="2"
+			gid1="0xFF"
+			gid_mask="0xFF" />
+
+    <!-- Czech Republic
+    230	01	not applicable	not applicable	any	any	CZ Customisation
+    -->
+	<!-- Open market -->
+	<virtualNet carrier="CZ09" ons_name="Other" operator_key="23001F09"
+			numeric="23001"
+			virtual_net_rule="1"
+			imsi_start="23001" />
+    <!-- Czech Republic T-Mobile -->
+	<virtualNet carrier="CZ01" ons_name="T-Mobile" operator_key="23001F01" 
+			numeric="23001"
+			virtual_net_rule="3"
+			spn="T-Mobile CZ" />
+    <!-- Croatia
+    219	01	T-Mobile HR	xx542D4D6F62696C65204852FFFFFFFFFF	not applicable	not applicable	HR Customization
+    219	01	HT HR	xx4854204852FFFFFFFFFFFFFFFFFFFFFF	not applicable	not applicable	HR Customization
+    219	01	bonbon 	xx626F6E626F6EFFFFFFFFFFFFFFFFFFFF	not applicable	not applicable	BonBon Customization
+    219	01	HT HR	xx4854204852FFFFFFFFFFFFFFFFFFFFFF	not applicable	not applicable	HR Customization
+    219	01	MultiPlus mobile 	xx4D756C7469506C7573206D6F62696C65	not applicable	not applicable	Open Market 
+    219	01	Other value	Other value	not applicable	not applicable	Open Market 
+    219	01	not applicable	not applicable	not applicable	not applicable	Open Market 
+    219	01	not applicable	not applicable	01	Hravatski Telekom - Postpaid 	HR Customization
+    219	01	not applicable	not applicable	02	Hravatski Telekom - Prepaid 	HR Customization
+    219	01	not applicable	not applicable	03	Hravatski Telekom - Simpa	HR Customization
+    219	01	not applicable	not applicable	99	Hravatski Telekom - Replacement	HR Customization
+    219	01	not applicable	not applicable	10	BonBon - Prepaid	BonBon Customization
+    219	01	not applicable	not applicable	11	BonBon - Postpaid	BonBon Customization
+    219	01	not applicable	not applicable	12	BonBon - Replacement	BonBon Customization
+    219	01	not applicable	not applicable	20	Multiplus Mobile (No Frills)- Postpaid	Open Market
+    219	01	not applicable	not applicable	30	24mobi(No Frills)	Open Market
+    219	01	not applicable	not applicable	Other value	not applicable	Open Market
+    -->
+	<!-- Open market -->
+	<virtualNet carrier="HR09" ons_name="Other" operator_key="21901F09" 
+			numeric="21901"
+			virtual_net_rule="1"
+			imsi_start="21901" />
+	<!-- Hrvatski Telekom (HR) -->
+	<virtualNet carrier="HR01" ons_name="Hrvatski" operator_key="21901F01"
+			numeric="21901"
+			virtual_net_rule="2"
+			gid1="0x01"
+			gid_mask="0xFF" />
+	<virtualNet carrier="HR01" ons_name="Hrvatski" operator_key="21901F01"
+			numeric="21901"
+			virtual_net_rule="2"
+			gid1="0x02"
+			gid_mask="0xFF" />
+	<virtualNet carrier="HR01" ons_name="Hrvatski" operator_key="21901F01"
+			numeric="21901"
+			virtual_net_rule="2"
+			gid1="0x03"
+			gid_mask="0xFF" />
+	<virtualNet carrier="HR01" ons_name="Hrvatski" operator_key="21901F01"
+			numeric="21901"
+			virtual_net_rule="2"
+			gid1="0x99"
+			gid_mask="0xFF" />
+	<virtualNet carrier="HR01" ons_name="Hrvatski" operator_key="21901F01" 
+			numeric="21901"
+			virtual_net_rule="3"
+			spn="T-Mobile HR" />
+	<virtualNet carrier="HR01" ons_name="Hrvatski" operator_key="21901F01" 
+			numeric="21901"
+			virtual_net_rule="3"
+			spn="HT HR" />
+	<!-- Bonbon -->
+	<virtualNet carrier="HR02" ons_name="Bonbon" operator_key="21901F02"
+			numeric="21901"
+			virtual_net_rule="2"
+			gid1="0x10"
+			gid_mask="0xFF" />
+	<virtualNet carrier="HR02" ons_name="Bonbon" operator_key="21901F02"
+			numeric="21901"
+			virtual_net_rule="2"
+			gid1="0x11"
+			gid_mask="0xFF" />
+	<virtualNet carrier="HR02" ons_name="Bonbon" operator_key="21901F02"
+			numeric="21901"
+			virtual_net_rule="2"
+			gid1="0x12"
+			gid_mask="0xFF" />
+	<virtualNet carrier="HR02" ons_name="Bonbon" operator_key="21901F02" 
+			numeric="21901"
+			virtual_net_rule="3"
+			spn="bonbon" />
+    <!-- Slovakia
+    231	02	tbd	tbd	tbd	tbd	SK Customization
+    231	02	tbd	tbd	Other value	not applicable	Open Market
+    -->
+	<!-- Open market -->
+	<virtualNet carrier="SK09" ons_name="other" operator_key="23102F09"
+		numeric="23102"
+		virtual_net_rule="1"
+		imsi_start="23102" />
+    <!-- Slovak Telekom (SK) -->
+	<virtualNet carrier="SK01" ons_name="Telekom" operator_key="23102F01" 
+			numeric="23102"
+			virtual_net_rule="3"
+			spn="Telekom SK" />
+
+    <!-- Hungary
+    216	30	tbd	tbd	tbd	tbd	HU Customization
+    216	30	tbd	tbd	Other value	not applicable	Open Market
+    -->
+    <!-- Open market -->
+    <virtualNet carrier="HU09" ons_name="other" operator_key="21630F09"
+		numeric="21630"
+		virtual_net_rule="1"
+		imsi_start="21630" />
+	<!-- Magyar Telekom (HU) -->
+	<virtualNet carrier="HU01" ons_name="Magyar" operator_key="21630F01" 
+			numeric="21630"
+			virtual_net_rule="3"
+			spn="Telekom HU" />
+	<virtualNet carrier="HU01" ons_name="Magyar" operator_key="21630F01" 
+			numeric="21630"
+			virtual_net_rule="3"
+			spn="T-Mobile H" />
+
+    <!-- Macedonia
+    294	01	not applicable	not applicable	FF	any	MK Customization
+    -->
+	<!-- Open market -->
+	<virtualNet carrier="MK09" ons_name="other" operator_key="29401F09"
+			numeric="29401"
+			virtual_net_rule="1"
+			imsi_start="29401" />
+    <!-- Mkedonski Telekom AD Skopje (MK) -->
+	<virtualNet carrier="MK01" ons_name="Mkedonski" operator_key="29401F01"
+			numeric="29401"
+			virtual_net_rule="2"
+			gid1="0xFF"
+			gid_mask="0xFF" />
+	<virtualNet carrier="MK01" ons_name="Mkedonski" operator_key="29401F01" 
+			numeric="29401"
+			virtual_net_rule="3"
+			spn="Telekom.mk" />
+
+    <!-- Montenegro
+    297 / 220	02 / 04	tbd	tbd	tbd	tbd	ME Customization
+    297 / 220	02 / 04	tbd	tbd	Other value	not applicable	Open Market
+    297 / 220	Other value	any	any	Other value	not applicable	Open Market
+    -->
+	<!-- Open market -->
+	<virtualNet carrier="ME09" ons_name="other" operator_key="29702F09"
+			numeric="29702"
+			virtual_net_rule="1"
+			imsi_start="29702" />
+	<virtualNet carrier="ME09" ons_name="other" operator_key="29702F09"
+			numeric="22004"
+			virtual_net_rule="1"
+			imsi_start="22004" />
+	<!-- Crnogorski Telekom (ME) -->
+	<virtualNet carrier="ME01" ons_name="Crnogorski" operator_key="29702F01" 
+			numeric="29702"
+			virtual_net_rule="3"
+			spn="Telekom.me" />
+	<virtualNet carrier="ME01" ons_name="Crnogorski" operator_key="29702F01" 
+			numeric="22004"
+			virtual_net_rule="3"
+			spn="Telekom.me" />
+
+    <!-- Romania
+    226	03 / 06	TELEKOM.RO	xx54454C454B4F4D2E524FFFFFFFFFFFFF	not applicable	not applicable	RO Customization
+    226	03 / 06	COSMOTE	xx434F534D4F5445FFFFFFFFFFFFFFFFFF	not applicable	not applicable	RO Customization
+    226	03 / 06	frog	xx66726F67FFFFFFFFFFFFFFFFFFFFFFFF	not applicable	not applicable	RO Customization
+    226	03 / 06	MTV Mobile	xx4D5456204D6F62696C65FFFFFFFFFFFF	not applicable	not applicable	RO Customization
+    226	03 / 06	Other value	not applicable	not applicable	not applicable	Open Market
+    -->
+	<!-- Open market -->
+	<virtualNet carrier="RO09" ons_name="other" operator_key="22603F09"
+			numeric="22603"
+			virtual_net_rule="1"
+			imsi_start="22603" />
+	<virtualNet carrier="RO09" ons_name="other" operator_key="22603F09"
+			numeric="22606"
+			virtual_net_rule="1"
+			imsi_start="22606" />
+
+	<!-- Telekom Romania (RO) -->
+	<virtualNet carrier="RO01" ons_name="Telekom" operator_key="22603F01"
+			numeric="22603"
+			virtual_net_rule="3"
+			spn="TELEKOM.RO" />
+	<virtualNet carrier="RO01" ons_name="Telekom" operator_key="22603F01"
+			numeric="22603"
+			virtual_net_rule="3"
+			spn="COSMOTE" />
+	<virtualNet carrier="RO01" ons_name="Telekom" operator_key="22603F01"
+			numeric="22603"
+			virtual_net_rule="3"
+			spn="frog" />
+	<virtualNet carrier="RO01" ons_name="Telekom" operator_key="22603F01"
+			numeric="22603"
+			virtual_net_rule="3"
+			spn="MTV Mobile" />
+	<virtualNet carrier="RO01" ons_name="Telekom" operator_key="22603F01"
+			numeric="22606"
+			virtual_net_rule="3"
+			spn="TELEKOM.RO" />
+	<virtualNet carrier="RO01" ons_name="Telekom" operator_key="22603F01"
+			numeric="22606"
+			virtual_net_rule="3"
+			spn="COSMOTE" />
+	<virtualNet carrier="RO01" ons_name="Telekom" operator_key="22603F01"
+			numeric="22606"
+			virtual_net_rule="3"
+			spn="frog" />
+	<virtualNet carrier="RO01" ons_name="Telekom" operator_key="22603F01"
+			numeric="22606"
+			virtual_net_rule="3"
+			spn="MTV Mobile" />
+
+    <!-- 用于给 德国沃达丰演示 的IMSI映射配置
+    26202	any	DE vodafone	vdf
+    -->
+    <virtualNet carrier="vodafoneDE"
+            numeric="26202"
+            ons_name="vodafone"
+            virtual_net_rule="1"
+            imsi_start="26202"
+            operator_key="26202F01"
+            />
+
+    <!-- 用于给 内部测试 的IMSI映射配置
+    46001	any	China Unicom	unicom
+
+    46007	any	China mobile	cmcc
+
+    46060	03	wuhanLabF02	whF02
+
+    46060	SPN:wuhanF03	wuhanLab F03	whF03
+
+    46060	Other	wuhanLabF01	whF01
+    -->
+    <virtualNet carrier="UNICOM"
+            numeric="46001"
+            ons_name="china unicom"
+            virtual_net_rule="1"
+            imsi_start="46001"
+            operator_key="46001F01"
+            />
+    <virtualNet carrier="CMCC"
+            numeric="46007"
+            ons_name="china mobile"
+            virtual_net_rule="1"
+            imsi_start="46007"
+            operator_key="46007F01"
+            />
+    <virtualNet carrier="whF01"
+            numeric="46060"
+            ons_name="wuhanLabF01"
+            virtual_net_rule="1"
+            imsi_start="46060"
+            operator_key="46060F01"
+            />
+    <virtualNet carrier="whF02"
+            numeric="46060"
+            ons_name="wuhanLabF02"
+            virtual_net_rule="2"
+            gid1="0x03"
+            gid_mask="0xFF"
+            operator_key="46060F02"
+            />
+    <virtualNet carrier="whF03"
+            numeric="46060"
+            ons_name="wuhanLab F03"
+            virtual_net_rule="3"
+            spn="wuhanF03"
+            operator_key="46060F03"
+            />
+</virtualNets>

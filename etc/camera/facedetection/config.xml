@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="GB2312"?>
+<CONFIG_PARA>
+        <NOT_DETECT_FREQUENCY value="2"/>
+        <DO_DETECT_FREQUENCY value="1"/>
+        <INIT_DETECT_EACHFRAME_NUM value="20"/>
+        <INIT_DETECT_MOTION2_NUM value="5"/>
+        <LOWFPS_DETECT_EACHFRAME_ENABLE value="0"/>
+        <LOWFPS_DETECT_THREASHOLD value="16"/>
+        <FRONT_DETECT_EACHFRAME_ENABLE value="0"/>
+        <KEEP_LCD_FLASH_FRM_NUM value="5"/>
+        <MIN_FRONT_FACESIZE value="70"/>
+        <MAX_FRONT_FACESIZE value="450"/>
+        <MIN_BACK_FACESIZE value="60"/>
+        <MAX_BACK_FACESIZE value="400"/>
+        <TRACK_FRONT_THREASHOLD value="450"/>
+        <NO_TRACK_FRONT_THREASHOLD value="450"/>
+        <TRACK_BACK_THREASHOLD value="500"/>
+        <NO_TRACK_BACK_THREASHOLD value="500"/>
+        <USE_ISP_FACE value="0"/>
+</CONFIG_PARA>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   *******************CPU LOAD MOD***************************
+    /* go up freq as fast as possible */
+    FASTEST = 0;
+    /** for games */
+    GAME = 1;
+    /** user interface */
+    UI = 2;
+    /** default */
+    DEFAULT = 3;
+ *******************CPU LOAD MOD***************************
+-->
+<cpu_load version="1">
+    <para modid="0">
+        <upload>80</upload>
+        <upchecktimes>2</upchecktimes>
+        <upcheckspace>500</upcheckspace>
+        <upoffset>200000</upoffset><!-- up 200M at one time-->
+        <maxchecktimes>60</maxchecktimes>
+    </para>
+    <para modid="1">
+        <upload>90</upload>
+        <upchecktimes>2</upchecktimes>
+        <upcheckspace>2000</upcheckspace>
+        <upoffset>200000</upoffset><!-- up 200M at one time-->
+        <maxchecktimes>150</maxchecktimes>
+    </para>
+    <para modid="2">
+        <upload>85</upload>
+        <upchecktimes>4</upchecktimes>
+        <upcheckspace>1500</upcheckspace>
+        <upoffset>100000</upoffset><!-- up 100M at one time-->
+        <maxchecktimes>60</maxchecktimes>
+    </para>
+    <para modid="3">
+        <upload>95</upload>
+        <upchecktimes>3</upchecktimes>
+        <upcheckspace>2000</upcheckspace>
+        <upoffset>100000</upoffset><!-- up 100M at one time-->
+        <maxchecktimes>-1</maxchecktimes>
+    </para>
+</cpu_load>

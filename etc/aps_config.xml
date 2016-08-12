@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * aps Config
+ * all states definitions at here.
+ -->
+
+<aps_app_list version="1">
+   <aps
+        name="com.supercell.boombeach.HUAWEI"
+        type="9999"
+        min="55"
+        r_min="0.75" />
+</aps_app_list>
+

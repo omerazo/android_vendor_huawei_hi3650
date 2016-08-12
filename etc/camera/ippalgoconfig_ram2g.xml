@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GB2312"?>
+<IppConfig>
+	<IppAlgo name="AntiBanding" switcher="1" ></IppAlgo>
+	<IppAlgo name="ColorReverser" switcher="0" ></IppAlgo>
+	<IppAlgo name="FaceDetection" switcher="1" ></IppAlgo>
+	<IppAlgo name="SceneDetection" switcher="1" ></IppAlgo>
+	<IppAlgo name="VideoStabilization" switcher="1" ></IppAlgo>
+	<IppAlgo name="TargetTracking" switcher="1" ></IppAlgo>
+	<IppAlgo name="MirrorDenoise" switcher="1" ></IppAlgo>
+	<IppAlgo name="SmartAE" switcher="1" ></IppAlgo>
+	<IppAlgo name="FaceSmooth" switcher="0" ></IppAlgo>
+	<IppAlgo name="ColorEffect" switcher="1" ></IppAlgo>
+	<IppAlgo name="DualCamAlgo" switcher="0" ></IppAlgo>
+	<IppAlgo name="BigApertureAlgo" switcher="0" ></IppAlgo>
+	<IppAlgo name="hwa_af" switcher="0" ></IppAlgo>
+	<IppAlgo name="FakeTransform" switcher="0" ></IppAlgo>
+	<IppAlgo name="DebugAeAwb" switcher="0" ></IppAlgo>
+	<IppAlgo name="Misc" switcher="1" ></IppAlgo>
+	<IppAlgo name="BShutterTryAE" switcher="1"></IppAlgo>
+	<IppAlgo name="DocVFaceBeauty" switcher="1"></IppAlgo>
+	<IppAlgo name="HwaAe" switcher="0"></IppAlgo>
+	<IppAlgo name="NiceFoodIppAlgo" switcher="1"></IppAlgo>
+	<IppAlgo name="HwaFlash" switcher="0"></IppAlgo>
+	<IppAlgo name="AssistAF" switcher="1"></IppAlgo>
+	<IppAlgo name="ContrastCalculate" switcher="1"></IppAlgo>
+	<IppAlgo name="DepthSelfLearnAlgo" switcher="0"></IppAlgo>
+	<IppAlgo name="HwBeautyIpp" switcher="0"></IppAlgo>
+</IppConfig>

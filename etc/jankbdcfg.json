@@ -1,0 +1,416 @@
+{
+"nRptInterval":86400,
+"nStatRealtime":0,
+"LimitFreqFilter":[{"Flag":0}],
+"BigData":
+[
+{"nActionID":0,"strComment":"SCREEN_WAKEUP_BYUSER",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":1,"strComment":"SCREEN_DEEPSLEEPWAKEUP_BYUSER",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":2,"strComment":"SCREEN_SLEEP_BYUSER",
+    "Marks":[{"Mark":0},{"Mark":400},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":3,"strComment":"SCREEN_WAKEUP_BYCALL",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":4,"strComment":"SCREEN_DEEPSLEEPWAKEUP_BYCALL",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":5,"strComment":"SCREEN_WAKEUP_BYUSB",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":6,"strComment":"SCREEN_DEEPSLEEPWAKEUP_BYUSB",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":7,"strComment":"SCREEN_WAKEUP_CHARGINGEND",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":8,"strComment":"DEVICE_POWERON",
+    "Marks":[{"Mark":0},{"Mark":10000},{"Mark":15000},{"Mark":18000},{"Mark":20000},{"Mark":22000},{"Mark":25000},{"Mark":30000},{"Mark":35000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":13,"strComment":"START_APP",
+    "Marks":[{"Mark":0},{"Mark":500},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":2500},{"Mark":3000},{"Mark":4000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":14,"strComment":"SCREEN_SLEEP_BYPROXIMITY",
+    "Marks":[{"Mark":0},{"Mark":400},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":15,"strComment":"SCREEN_WAKEUP_BYPROXIMITY",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":17,"strComment":"SCREEN_ROTATION",
+    "Marks":[{"Mark":0},{"Mark":500},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000},{"Mark":3500}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":18,"strComment":"JANK_FRAME",
+    "Marks":[{"Mark":100},{"Mark":240},{"Mark":320},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":19,"strComment":"SCREEN_WAKEUP_BYCOVER",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":21,"strComment":"SCREEN_WAKEUP_BYFPC",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":22,"strComment":"SCREEN_WAKEUP_BYSMS",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":24,"strComment":"SCREEN_WAKEUP_BYDBCLICK",
+    "Marks":[{"Mark":0},{"Mark":600},{"Mark":800},{"Mark":1000},{"Mark":1500},{"Mark":2000},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":27,"strComment":"CAMERA_COLD_LAUNCH",
+    "Marks":[{"Mark":0},{"Mark":1021},{"Mark":1201},{"Mark":1501},{"Mark":1650},{"Mark":1800},{"Mark":1950},{"Mark":2100},{"Mark":2250},{"Mark":2400}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":28,"strComment":"CAMERA_AF",
+    "Marks":[{"Mark":0},{"Mark":6000}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":29,"strComment":"CAMERA_SHUTTER_LAG_ZSL",
+    "Marks":[{"Mark":0},{"Mark":200}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":30,"strComment":"CAMERA_SHUTTER_LAG_NOZSL",
+    "Marks":[{"Mark":0},{"Mark":1000}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":31,"strComment":"CAMERA_SHOT_TO_SEE",
+    "Marks":[{"Mark":0},{"Mark":1500}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":32,"strComment":"CAMERA_SEE_TO_REVIEW",
+    "Marks":[{"Mark":0},{"Mark":6000}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":33,"strComment":"CAMERA_QUICK_SNAPSHOT",
+    "Marks":[{"Mark":0},{"Mark":2000}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":34,"strComment":"CAMERA_START_RECORDING",
+    "Marks":[{"Mark":0},{"Mark":2500}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":35,"strComment":"ART_GC_TOTALTIME",
+    "Marks":[{"Mark":100},{"Mark":200},{"Mark":300},{"Mark":400},{"Mark":500}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":36,"strComment":"ART_GC_PAUSETIME",
+    "Marks":[{"Mark":16},{"Mark":50},{"Mark":100},{"Mark":150},{"Mark":200},{"Mark":250},{"Mark":320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":37,"strComment":"CONTACTS_CONTACT_LAUNCH_COLD",
+    "Marks":[{"Mark":0},{"Mark":400},{"Mark":550},{"Mark":700},{"Mark":850},{"Mark":1000},{"Mark":1100},{"Mark":1200},{"Mark":1500},{"Mark":1800}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":38,"strComment":"CONTACTS_DIALPAD_LAUNCH_COLD",
+    "Marks":[{"Mark":0},{"Mark":400},{"Mark":550},{"Mark":700},{"Mark":850},{"Mark":1000},{"Mark":1100},{"Mark":1200},{"Mark":1500},{"Mark":1800}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":39,"strComment":"CONTACTS_CONTACT_LAUNCH",
+    "Marks":[{"Mark":0},{"Mark":150},{"Mark":250},{"Mark":300},{"Mark":400},{"Mark":450},{"Mark":500},{"Mark":550},{"Mark":650},{"Mark":800}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":40,"strComment":"CONTACTS_DIALPAD_LAUNCH",
+    "Marks":[{"Mark":0},{"Mark":150},{"Mark":250},{"Mark":300},{"Mark":400},{"Mark":450},{"Mark":500},{"Mark":550},{"Mark":650},{"Mark":800}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":41,"strComment":"CONTACTS_DIALPAD_DIAL",
+    "Marks":[{"Mark":0},{"Mark":10},{"Mark":15},{"Mark":20},{"Mark":25},{"Mark":35},{"Mark":45},{"Mark":55},{"Mark":70},{"Mark":85}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":42,"strComment":"CONTACTS_DIALPAD_SEARCH",
+    "Marks":[{"Mark":0},{"Mark":100},{"Mark":150},{"Mark":200},{"Mark":250},{"Mark":300},{"Mark":350},{"Mark":400},{"Mark":500},{"Mark":600}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":43,"strComment":"CONTACTS_VIEW_CONTACT",
+    "Marks":[{"Mark":0},{"Mark":200},{"Mark":300},{"Mark":400},{"Mark":500},{"Mark":600},{"Mark":700},{"Mark":800},{"Mark":900},{"Mark":1000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":44,"strComment":"CONTACTS_NEW_CONTACT",
+    "Marks":[{"Mark":0},{"Mark":200},{"Mark":300},{"Mark":400},{"Mark":500},{"Mark":600},{"Mark":700},{"Mark":800},{"Mark":900},{"Mark":1000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":45,"strComment":"CONTACTS_SAVE_CONTACT",
+    "Marks":[{"Mark":0},{"Mark":500},{"Mark":600},{"Mark":700},{"Mark":800},{"Mark":900},{"Mark":1000},{"Mark":1100},{"Mark":1200},{"Mark":1500}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":46,"strComment":"CONTACTS_EDIT_CONTACT",
+    "Marks":[{"Mark":0},{"Mark":200},{"Mark":300},{"Mark":400},{"Mark":500},{"Mark":600},{"Mark":700},{"Mark":800},{"Mark":900},{"Mark":1000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":47,"strComment":"CONTACTS_CONTACT_MULTISELECTION",
+    "Marks":[{"Mark":0},{"Mark":500},{"Mark":600},{"Mark":700},{"Mark":800},{"Mark":900},{"Mark":1000},{"Mark":1100},{"Mark":1200},{"Mark":1500}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":48,"strComment":"PHONE_INCALLUI_LAUNCH",
+    "Marks":[{"Mark":0},{"Mark":1500}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":49,"strComment":"PHONE_INCALLUI_CLOSE",
+    "Marks":[{"Mark":0},{"Mark":1500}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":50,"strComment":"SYSTEMUI_DROPDOWN_RESPONSE",
+    "Marks":[{"Mark":0},{"Mark":160}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":51,"strComment":"SYSTEMUI_TAB_SWITCH",
+    "Marks":[{"Mark":0},{"Mark":250}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":52,"strComment":"SYSTEMUI_START_RECENT",
+    "Marks":[{"Mark":0},{"Mark":500}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":53,"strComment":"SYSTEMUI_REMOVEALL_RECENT",
+    "Marks":[{"Mark":0},{"Mark":500}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":54,"strComment":"MMS_CONVERSATIONS_DELETE",
+    "Marks":[{"Mark":0},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":55,"strComment":"MMS_MESSAGES_DELETE",
+    "Marks":[{"Mark":0},{"Mark":3000}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":56,"strComment":"MMS_MESSAGE_SEARCH",
+    "Marks":[{"Mark":0},{"Mark":1500}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":57,"strComment":"MMS_RECENT_CONTACTS_QUERY",
+    "Marks":[{"Mark":0},{"Mark":1500}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":58,"strComment":"MMS_MATCHED_CONTACTS_SEARCH",
+    "Marks":[{"Mark":0},{"Mark":1500}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":59,"strComment":"AUTO_BRIGHTNESS_CONTROL",
+    "Marks":[{"Mark":0},{"Mark":800}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":60,"strComment":"SETTINGS_BLUETOOTH_LAUNCH",
+    "Marks":[{"Mark":0},{"Mark":1200}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":61,"strComment":"SETTINGS_WIFI_LAUNCH",
+    "Marks":[{"Mark":0},{"Mark":1200}],
+    "TotalCount":[{"Count":0},{"Count":0}]
+},
+{"nActionID":62,"strComment":"SYSTEM_RESOURCE_MANAGER",
+    "Marks":[{"Mark":0},{"Mark":500},{"Mark":1000},{"Mark":1500},{"Mark":2000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":63,"strComment":"CAMERA_HOT_LAUNCH",
+    "Marks":[{"Mark":0},{"Mark":601},{"Mark":821},{"Mark":1201},{"Mark":1320},{"Mark":1440},{"Mark":1560},{"Mark":1680},{"Mark":1800},{"Mark":1920}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":64,"strComment":"EMUI_ANIMATION_JANKFRAME",
+    "Marks":[{"Mark":0},{"Mark":3},{"Mark":4},{"Mark":5},{"Mark":6},{"Mark":7},{"Mark":8},{"Mark":10},{"Mark":15},{"Mark":20}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":65,"strComment":"AUDIO_SOUNDEFFECT_PLAY",
+    "Marks":[{"Mark":0},{"Mark":20},{"Mark":40},{"Mark":50},{"Mark":100},{"Mark":150},{"Mark":200},{"Mark":300},{"Mark":400},{"Mark":500}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":66,"strComment":"CAMERA_REAR_CAPTURE_SINGLE",
+    "Marks":[{"Mark":0},{"Mark":1601},{"Mark":1951},{"Mark":2301},{"Mark":2530},{"Mark":2760},{"Mark":2990},{"Mark":3220},{"Mark":3450},{"Mark":3680}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":67,"strComment":"CAMERA_REAR_CAPTURE_HDR",
+    "Marks":[{"Mark":0},{"Mark":1671},{"Mark":1961},{"Mark":2701},{"Mark":2970},{"Mark":3240},{"Mark":3510},{"Mark":3779},{"Mark":4050},{"Mark":4320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":68,"strComment":"CAMERA_REAR_CAPTURE_MUTILDENOSIZE",
+    "Marks":[{"Mark":0},{"Mark":2001},{"Mark":2221},{"Mark":2701},{"Mark":2970},{"Mark":3240},{"Mark":3510},{"Mark":3779},{"Mark":4050},{"Mark":4320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":69,"strComment":"CAMERA_REAR_CAPTURE_EDOF",
+    "Marks":[{"Mark":0},{"Mark":1901},{"Mark":2101},{"Mark":2701},{"Mark":2970},{"Mark":3240},{"Mark":3510},{"Mark":3779},{"Mark":4050},{"Mark":4320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":70,"strComment":"CAMERA_REAR_CAPTURE_GIGITALZOOM",
+    "Marks":[{"Mark":0},{"Mark":2001},{"Mark":2221},{"Mark":2701},{"Mark":2970},{"Mark":3240},{"Mark":3510},{"Mark":3779},{"Mark":4050},{"Mark":4320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":71,"strComment":"CAMERA_REAR_CAPTURE_BEAUTY",
+    "Marks":[{"Mark":0},{"Mark":1601},{"Mark":1951},{"Mark":2301},{"Mark":2530},{"Mark":2760},{"Mark":2990},{"Mark":3220},{"Mark":3450},{"Mark":3680}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":72,"strComment":"CAMERA_REAR_CAPTURE_FASTCAP",
+    "Marks":[{"Mark":0},{"Mark":1001},{"Mark":1201},{"Mark":1401},{"Mark":1540},{"Mark":1680},{"Mark":1820},{"Mark":1959},{"Mark":2100},{"Mark":2240}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":73,"strComment":"CAMERA_REAR_CAPTURE_ALLFOCUS",
+    "Marks":[{"Mark":0},{"Mark":2001},{"Mark":2221},{"Mark":2701},{"Mark":2970},{"Mark":3240},{"Mark":3510},{"Mark":3779},{"Mark":4050},{"Mark":4320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":74,"strComment":"CAMERA_REAR_CAPTURE_HIGHDYNAMIC",
+    "Marks":[{"Mark":0},{"Mark":1671},{"Mark":1961},{"Mark":2701},{"Mark":2970},{"Mark":3240},{"Mark":3510},{"Mark":3779},{"Mark":4050},{"Mark":4320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":75,"strComment":"CAMERA_FRONT_CAPTURE_SINGLE",
+    "Marks":[{"Mark":0},{"Mark":1601},{"Mark":1951},{"Mark":2301},{"Mark":2530},{"Mark":2760},{"Mark":2990},{"Mark":3220},{"Mark":3450},{"Mark":3680}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":76,"strComment":"CAMERA_FRONT_CAPTURE_HDR",
+    "Marks":[{"Mark":0},{"Mark":1671},{"Mark":1961},{"Mark":2701},{"Mark":2970},{"Mark":3240},{"Mark":3510},{"Mark":3779},{"Mark":4050},{"Mark":4320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":77,"strComment":"CAMERA_FRONT_CAPTURE_MUTILDENOISE",
+    "Marks":[{"Mark":0},{"Mark":2001},{"Mark":2221},{"Mark":2701},{"Mark":2970},{"Mark":3240},{"Mark":3510},{"Mark":3779},{"Mark":4050},{"Mark":4320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":78,"strComment":"CAMERA_FRONT_CAPTURE_BEAUTY",
+    "Marks":[{"Mark":0},{"Mark":1601},{"Mark":1951},{"Mark":2301},{"Mark":2530},{"Mark":2760},{"Mark":2990},{"Mark":3220},{"Mark":3450},{"Mark":3680}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":80,"strComment":"CAMERA_REAR_TAF_LOWFPS",
+    "Marks":[{"Mark":0},{"Mark":843},{"Mark":934},{"Mark":1456},{"Mark":1600},{"Mark":1746},{"Mark":1891},{"Mark":2036},{"Mark":2182},{"Mark":2328}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":81,"strComment":"CAMERA_REAR_TAF_HIGHFPS",
+    "Marks":[{"Mark":0},{"Mark":641},{"Mark":700},{"Mark":817},{"Mark":897},{"Mark":979},{"Mark":1060},{"Mark":1142},{"Mark":1224},{"Mark":1305}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":82,"strComment":"CAMERA_FRONT_TAF_LOWFPS",
+    "Marks":[{"Mark":0},{"Mark":843},{"Mark":934},{"Mark":1456},{"Mark":1600},{"Mark":1746},{"Mark":1891},{"Mark":2036},{"Mark":2182},{"Mark":2328}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":83,"strComment":"CAMERA_FRONT_TAF_HIGHFPS",
+    "Marks":[{"Mark":0},{"Mark":641},{"Mark":700},{"Mark":817},{"Mark":897},{"Mark":979},{"Mark":1060},{"Mark":1142},{"Mark":1224},{"Mark":1305}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":84,"strComment":"CAMERA_SWITCH2REAR",
+    "Marks":[{"Mark":0},{"Mark":881},{"Mark":1001},{"Mark":1201},{"Mark":1320},{"Mark":1440},{"Mark":1560},{"Mark":1680},{"Mark":1800},{"Mark":1920}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":85,"strComment":"CAMERA_SWITCH2FRONT",
+    "Marks":[{"Mark":0},{"Mark":881},{"Mark":1001},{"Mark":1201},{"Mark":1320},{"Mark":1440},{"Mark":1560},{"Mark":1680},{"Mark":1800},{"Mark":1920}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":86,"strComment":"CAMERA_REAR_BURST50_HighFPS",
+    "Marks":[{"Mark":0},{"Mark":4168},{"Mark":5001},{"Mark":10001},{"Mark":11000},{"Mark":12000},{"Mark":13000},{"Mark":14000},{"Mark":15000},{"Mark":16000}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":87,"strComment":"CAMERA_REAR_SHOT2REVIEW_HIGHFPS",
+    "Marks":[{"Mark":0},{"Mark":1101},{"Mark":1201},{"Mark":1301},{"Mark":1430},{"Mark":1560},{"Mark":1690},{"Mark":1819},{"Mark":1950},{"Mark":2080}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":88,"strComment":"CAMERA_REAR_SHOT2REVIEW_LOWFPS",
+    "Marks":[{"Mark":0},{"Mark":1111},{"Mark":1301},{"Mark":1501},{"Mark":1650},{"Mark":1800},{"Mark":1950},{"Mark":2100},{"Mark":2250},{"Mark":2400}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":89,"strComment":"CAMERA_REAR_SHOT2REVIEW_HDR",
+    "Marks":[{"Mark":0},{"Mark":1051},{"Mark":1101},{"Mark":1501},{"Mark":1650},{"Mark":1800},{"Mark":1950},{"Mark":2100},{"Mark":2250},{"Mark":2400}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":90,"strComment":"CAMERA_REAR_SHOT2REVIEW_EDOF",
+    "Marks":[{"Mark":0},{"Mark":1001},{"Mark":1201},{"Mark":1501},{"Mark":1650},{"Mark":1800},{"Mark":1950},{"Mark":2100},{"Mark":2250},{"Mark":2400}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":91,"strComment":"CAMERA_FRONT_SHOT2REVIEW_HIGHFPS",
+    "Marks":[{"Mark":0},{"Mark":1101},{"Mark":1201},{"Mark":1301},{"Mark":1430},{"Mark":1560},{"Mark":1690},{"Mark":1819},{"Mark":1950},{"Mark":2080}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":92,"strComment":"CAMERA_FRONT_SHOT2REVIEW_LOWFPS",
+    "Marks":[{"Mark":0},{"Mark":1111},{"Mark":1301},{"Mark":1501},{"Mark":1650},{"Mark":1800},{"Mark":1950},{"Mark":2100},{"Mark":2250},{"Mark":2400}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":93,"strComment":"CAMERA_FRONT_SHOT2REVIEW_HDR",
+    "Marks":[{"Mark":0},{"Mark":1051},{"Mark":1101},{"Mark":1501},{"Mark":1650},{"Mark":1800},{"Mark":1950},{"Mark":2100},{"Mark":2250},{"Mark":2400}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":94,"strComment":"CAMERA_REAR_START_RECORDING",
+    "Marks":[{"Mark":0},{"Mark":1061},{"Mark":1631},{"Mark":2201},{"Mark":2420},{"Mark":2640},{"Mark":2860},{"Mark":3080},{"Mark":3300},{"Mark":3520}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":95,"strComment":"CAMERA_FRONT_START_RECORDING",
+    "Marks":[{"Mark":0},{"Mark":1061},{"Mark":1631},{"Mark":2201},{"Mark":2420},{"Mark":2640},{"Mark":2860},{"Mark":3080},{"Mark":3300},{"Mark":3520}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":96,"strComment":"CAMERA_REAR_SHOT2SEE_HIGHFPS",
+    "Marks":[{"Mark":0},{"Mark":501},{"Mark":751},{"Mark":1001},{"Mark":1100},{"Mark":1200},{"Mark":1300},{"Mark":1400},{"Mark":1500},{"Mark":1600}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":97,"strComment":"CAMERA_REAR_SHOT2SEE_LOWFPS",
+    "Marks":[{"Mark":0},{"Mark":891},{"Mark":921},{"Mark":1201},{"Mark":1320},{"Mark":1440},{"Mark":1560},{"Mark":1680},{"Mark":1800},{"Mark":1920}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":98,"strComment":"CAMERA_REAR_SHOT2SEE_HDR",
+    "Marks":[{"Mark":0},{"Mark":621},{"Mark":861},{"Mark":1201},{"Mark":1320},{"Mark":1440},{"Mark":1560},{"Mark":1680},{"Mark":1800},{"Mark":1920}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":99,"strComment":"CAMERA_FRONT_SHOT2SEE_HIGHFPS",
+    "Marks":[{"Mark":0},{"Mark":501},{"Mark":751},{"Mark":1001},{"Mark":1100},{"Mark":1200},{"Mark":1300},{"Mark":1400},{"Mark":1500},{"Mark":1600}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":100,"strComment":"CAMERA_FRONT_SHOT2SEE_LOWFPS",
+    "Marks":[{"Mark":0},{"Mark":891},{"Mark":921},{"Mark":1201},{"Mark":1320},{"Mark":1440},{"Mark":1560},{"Mark":1680},{"Mark":1800},{"Mark":1920}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":101,"strComment":"CAMERA_FRONT_SHOT2SEE_HDR",
+    "Marks":[{"Mark":0},{"Mark":621},{"Mark":861},{"Mark":1201},{"Mark":1320},{"Mark":1440},{"Mark":1560},{"Mark":1680},{"Mark":1800},{"Mark":1920}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":102,"strComment":"CAMERA_REAR_SHUTTERLAG_HIGHFPS",
+    "Marks":[{"Mark":0},{"Mark":101},{"Mark":221},{"Mark":251},{"Mark":275},{"Mark":300},{"Mark":325},{"Mark":350},{"Mark":375},{"Mark":400}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":103,"strComment":"CAMERA_REAR_SHUTTERLAG_LOWFPS",
+    "Marks":[{"Mark":0},{"Mark":201},{"Mark":271},{"Mark":351},{"Mark":385},{"Mark":420},{"Mark":455},{"Mark":489},{"Mark":525},{"Mark":560}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":104,"strComment":"CAMERA_REAR_SHUTTERLAG_HDR",
+    "Marks":[{"Mark":0},{"Mark":131},{"Mark":251},{"Mark":501},{"Mark":550},{"Mark":600},{"Mark":650},{"Mark":700},{"Mark":750},{"Mark":800}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":105,"strComment":"CAMERA_FRONT_SHUTTERLAG_HIGHFPS",
+    "Marks":[{"Mark":0},{"Mark":101},{"Mark":221},{"Mark":251},{"Mark":275},{"Mark":300},{"Mark":325},{"Mark":350},{"Mark":375},{"Mark":400}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":106,"strComment":"CAMERA_FRONT_SHUTTERLAG_LOWFPS",
+    "Marks":[{"Mark":0},{"Mark":201},{"Mark":271},{"Mark":351},{"Mark":385},{"Mark":420},{"Mark":455},{"Mark":489},{"Mark":525},{"Mark":560}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":107,"strComment":"CAMERA_FRONT_SHUTTERLAG_HDR",
+    "Marks":[{"Mark":0},{"Mark":131},{"Mark":251},{"Mark":501},{"Mark":550},{"Mark":600},{"Mark":650},{"Mark":700},{"Mark":750},{"Mark":800}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":108,"strComment":"CAMERA_BUFFER_ALLOC",
+    "Marks":[{"Mark":0},{"Mark":2},{"Mark":5},{"Mark":8},{"Mark":15},{"Mark":20},{"Mark":25},{"Mark":30},{"Mark":40},{"Mark":50}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":109,"strComment":"CAMERA_REAR_SHOT2SEE_EDOF",
+    "Marks":[{"Mark":0},{"Mark":801},{"Mark":901},{"Mark":1201},{"Mark":1320},{"Mark":1440},{"Mark":1560},{"Mark":1680},{"Mark":1800},{"Mark":1920}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":110,"strComment":"CAMERA_REAR_SHUTTERLAG_EDOF",
+    "Marks":[{"Mark":0},{"Mark":251},{"Mark":301},{"Mark":501},{"Mark":550},{"Mark":600},{"Mark":650},{"Mark":700},{"Mark":750},{"Mark":800}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+},
+{"nActionID":111,"strComment":"CAMERA_SAVEPHOTO",
+    "Marks":[{"Mark":0},{"Mark":20},{"Mark":40},{"Mark":80},{"Mark":120},{"Mark":160},{"Mark":200},{"Mark":240},{"Mark":280},{"Mark":320}],
+    "TotalCount":[{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0},{"Count":0}]
+}
+]
+}

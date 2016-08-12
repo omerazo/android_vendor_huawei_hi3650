@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GB2312"?>
+<HWA_DCVALIDATION>
+    <Mode m="0.861111111" n="0.5000" rectWidth="160" rectHeight="160" distance="150" minDistance="132" maxDistance="170" vcm="150" minVcm="-80" maxVcm="80" />
+    <Mode m="0.583333333" n="0.5000" rectWidth="160" rectHeight="160" distance="400" minDistance="359" maxDistance="443" vcm="400" minVcm="-60" maxVcm="60" />
+    <Mode m="0.275555556" n="0.5000" rectWidth="160" rectHeight="160" distance="1000" minDistance="806" maxDistance="1496" vcm="1000" minVcm="-80" maxVcm="80" />
+
+    <Mode m="0.851111111" n="0.4900" rectWidth="160" rectHeight="160" distance="150" minDistance="132" maxDistance="170" vcm="150" minVcm="-80" maxVcm="80" />
+    <Mode m="0.573333333" n="0.4900" rectWidth="160" rectHeight="160" distance="400" minDistance="359" maxDistance="443" vcm="400" minVcm="-60" maxVcm="60" />
+    <Mode m="0.265555556" n="0.4900" rectWidth="160" rectHeight="160" distance="1000" minDistance="806" maxDistance="1496" vcm="1000" minVcm="-80" maxVcm="80" />
+
+    <Mode m="0.871111111" n="0.5100" rectWidth="160" rectHeight="160" distance="150" minDistance="132" maxDistance="170" vcm="150" minVcm="-80" maxVcm="80" />
+    <Mode m="0.593333333" n="0.5100" rectWidth="160" rectHeight="160" distance="400" minDistance="359" maxDistance="443" vcm="400" minVcm="-60" maxVcm="60" />
+    <Mode m="0.285555556" n="0.5100" rectWidth="160" rectHeight="160" distance="1000" minDistance="806" maxDistance="1496" vcm="1000" minVcm="-80" maxVcm="80" />
+</HWA_DCVALIDATION>

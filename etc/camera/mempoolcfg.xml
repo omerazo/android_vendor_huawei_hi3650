@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GB2312"?>
+<MemPoolConfig  Version="Mempoolcfg_V2.0" Time="20151120">
+    <Gloable>
+        <Enable>1</Enable>
+        <RamRatio>0.3</RamRatio>
+    </Gloable>
+    <Strategy Enable="1">
+        <!-- reuse_percent-->
+        <default_ratio>0.5</default_ratio>
+        <size1KB_less>0.0</size1KB_less>
+        <size1MB_less>0.5</size1MB_less>
+        <size1WxH_less>0.5</size1WxH_less>
+        <sizeNxWxH>
+            <size1WxH>0.5</size1WxH><!-- [size1WxH,size2WxH)-->
+            <size2WxH>0.5</size2WxH>
+            <size3WxH>0.5</size3WxH>
+            <size4WxH>0.5</size4WxH>
+            <size5WxH>0.5</size5WxH>
+            <size6WxH>0.5</size6WxH>
+            <size7WxH>0.5</size7WxH>
+            <size8WxH>0.5</size8WxH>
+            <size9WxH>0.5</size9WxH>
+            <size10WxH>0.5</size10WxH>
+        </sizeNxWxH>
+    </Strategy>
+    <PreAlloc Enable="0">
+        <Algo name="common">
+            <!--<AlgoBuffer multiple="7.0">1</AlgoBuffer>--><!--davinci-->
+        </Algo>
+        <Algo name="davinci">
+            <!--<AlgoBuffer multiple="7.0">1</AlgoBuffer>-->
+        </Algo>
+        <Algo name="hdr">
+            <!--<AlgoBuffer multiple="5.0">2</AlgoBuffer>-->
+            <!--<AlgoBuffer multiple="2.0">5</AlgoBuffer>-->
+            <!--<AlgoBuffer multiple="1.0">1</AlgoBuffer>-->
+            <!--<AlgoBuffer multiple="0.5">3</AlgoBuffer>-->
+        </Algo>
+        <Algo name="sr">
+            <!--<AlgoBuffer multiple="3.0">1</AlgoBuffer>-->
+            <!--<AlgoBuffer multiple="2.0">1</AlgoBuffer>-->
+            <!--<AlgoBuffer multiple="1.0">1</AlgoBuffer>-->
+        </Algo>
+    </PreAlloc>
+</MemPoolConfig>

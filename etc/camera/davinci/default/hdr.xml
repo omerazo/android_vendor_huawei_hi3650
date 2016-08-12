@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Config>
+    <night_iso>6400</night_iso>
+    <night_exposure>12</night_exposure>
+    <night_lumaavg>15</night_lumaavg>
+
+    <ImageRegistrationMethod>0</ImageRegistrationMethod>
+
+    <GhostRemovalMethod>1</GhostRemovalMethod>
+    <LocalMotionDetection>
+        <MotionLowGray>10</MotionLowGray>
+        <MotionHighGray>20</MotionHighGray>
+        <MotionRatio>2.0</MotionRatio>
+    </LocalMotionDetection>
+    <PureColorMotionDetection>
+        <MotionRatio>0.2</MotionRatio>
+    </PureColorMotionDetection>
+    <LocalMotionCorrection>255</LocalMotionCorrection>
+
+    <ImageFusionMethod>1</ImageFusionMethod>
+    <ImageFusion>
+        <MinDarkWeight>-1.0</MinDarkWeight>
+        <MinBrightWeight>-1.0</MinBrightWeight>
+        <MaxBrightWeight>1.0</MaxBrightWeight>
+        <MaxDarkWeight>1.0</MaxDarkWeight>
+        <PyramidTopSize>16</PyramidTopSize>
+        <WeightCalcMethod>1</WeightCalcMethod>
+        <MinUnderExposureDiv>32</MinUnderExposureDiv>
+        <MaxUnderExposureDiv>96</MaxUnderExposureDiv>
+        <MinOverExposureDiv>176</MinOverExposureDiv>
+        <MaxOverExposureDiv>226</MaxOverExposureDiv>
+        <BlendCenter>128</BlendCenter>
+        <BlendSigma>0.25</BlendSigma>
+    </ImageFusion>
+
+    <PostProcessValid>1</PostProcessValid>
+    <PostProcess>
+        <DenoiseDarkThresh>255</DenoiseDarkThresh>
+    </PostProcess>
+
+    <FlashHDR>
+        <PyramidTopSize>8</PyramidTopSize>
+        <WeightCalcMethod>2</WeightCalcMethod>
+        <BlendCenter>-25</BlendCenter>
+        <BlendSigma>0.25</BlendSigma>
+    </FlashHDR>
+
+    <Face>
+        <AjustRatio>64</AjustRatio>
+        <Margin>10</Margin>
+        <SmoothRadius>40</SmoothRadius>
+    </Face>
+
+    <PreMotionDetection>
+        <MotionLowGray>10</MotionLowGray>
+        <MotionHighGray>20</MotionHighGray>
+        <MotionRatio>5.0</MotionRatio>
+    </PreMotionDetection>
+</Config>

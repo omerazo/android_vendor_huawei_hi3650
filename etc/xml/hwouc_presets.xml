@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hwouc_presets version="1">
+    <!-- SW_GLOBAL_EUROPE_040 begin -->
+    <int name="download_limit_size">1</int>
+    <string name="PLMN_cust_values">21401,0,false</string>
+    <!-- SW_GLOBAL_EUROPE_040 end -->
+    <!-- COTA feature 2015-10-28 begin -->
+    <string name="phone_cota_uri">http://query.hicloud.com:80/sp_cota_common/v2/Check.action?latest=true</string>
+    <string name="phone_cota_report_uri">http://query.hicloud.com:80/sp_cota_common/v2/UpdateReport.action</string>
+    <bool name="support_auto_download">true</bool>
+    <bool name="auto_download_switch_value">true</bool>
+    <!-- COTA feature 2015-10-28 end -->
+</hwouc_presets>

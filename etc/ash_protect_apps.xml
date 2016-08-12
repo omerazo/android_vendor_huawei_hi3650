@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+PowerGenie config file
+This xml file is used for ASH protecting core apps by name
+-->
+<list>
+    <array type="protect_apps" version="1.0">
+        <item>com.google.android.wearable.app</item>
+        <item>com.google.android.wearable.app.cn</item>
+    </array>
+</list>
+
+
