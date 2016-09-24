@@ -7,6 +7,11 @@
 PRODUCT_COPY_FILES += \
         vendor/huawei/hi6250/lib64/libion.so:override/lib64/libion.so \
         vendor/huawei/hi6250/lib/libion.so:override/lib/libion.so \
+        vendor/huawei/hi6250/etc/wifi/p2p_supplicant_overlay.conf:override/etc/wifi/p2p_supplicant_overlay.conf \
+        vendor/huawei/hi6250/etc/wifi/wpa_supplicant_overlay.conf:override/etc/wifi/wpa_supplicant_overlay.conf \
+        vendor/huawei/hi6250/etc/wifi/wpa_supplicant.conf:override/etc/wifi/wpa_supplicant.conf  \
+        vendor/huawei/hi6250/lib64/libwpa_client_hisi.so:override/lib64/libwpa_client.so \
+        vendor/huawei/hi6250/lib/libwpa_client_hisi.so:override/lib/libwpa_client.so \
 
 #
 #
