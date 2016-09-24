@@ -12,6 +12,11 @@ PRODUCT_COPY_FILES += \
         vendor/huawei/hi6250/etc/wifi/wpa_supplicant.conf:override/etc/wifi/wpa_supplicant.conf  \
         vendor/huawei/hi6250/lib64/libwpa_client_hisi.so:override/lib64/libwpa_client.so \
         vendor/huawei/hi6250/lib/libwpa_client_hisi.so:override/lib/libwpa_client.so \
+        vendor/huawei/hi6250/vendor/lib64/libbt-vendor-hisi.so:override/vendor/lib64/libbt-vendor.so \
+        vendor/huawei/hi6250/vendor/lib/libbt-vendor-hisi.so:override/vendor/lib/libbt-vendor.so \
+        vendor/huawei/hi6250/etc/bluetooth/bt_did.conf:override/etc/bluetooth/bt_did.conf \
+        vendor/huawei/hi6250/etc/bluetooth/bt_stack.conf:override/etc/bluetooth/bt_stack.conf \
+        vendor/huawei/hi6250/etc/bluetooth/auto_pair_devlist.conf:override/etc/bluetooth/auto_pair_devlist.conf
 
 #
 #
